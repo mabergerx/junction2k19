@@ -141,3 +141,7 @@ export const Item = styled.li`
 export const ItemWrapper = styled.div`
   flex: 1 0 33%;
 `;
+
+export const AccountWrapper = styled.div`
+  background-color: white;
+`;

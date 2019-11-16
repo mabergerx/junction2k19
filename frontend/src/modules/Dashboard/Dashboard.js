@@ -6,7 +6,8 @@ import {
   Navigation,
   NavigationWrapper,
   Item,
-  ItemWrapper
+  ItemWrapper,
+  AccountWrapper
 } from "./DashboardComponents";
 import Image from "../../assets/sample.jpeg";
 import Header from "../Header/Header";
@@ -46,8 +47,10 @@ export default ({ onClick }) => {
               </div>
             </Card>
           </>
+        ) : selected === "Plan" ? (
+          <div>Plan</div>
         ) : (
-          <div></div>
+          <AccountWrapper>Account</AccountWrapper>
         )}
       </DashboardWrapper>
       <NavigationWrapper>
