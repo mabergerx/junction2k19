@@ -19,7 +19,7 @@ const Profile = styled.div`
   margin: 10px;
   background-color: purple;
   background-image: ${props => `url(${props.image})`};
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
   cursor: pointer;

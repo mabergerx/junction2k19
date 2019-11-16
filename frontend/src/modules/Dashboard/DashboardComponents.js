@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const DashboardWrapper = styled.section`
   max-width: 1000px;
   padding: 20px;
+  height: calc(100vh - 70px);
   background: rgb(242, 132, 65);
   background: linear-gradient(
     rgba(242, 132, 65, 1) 0%,
@@ -16,27 +17,48 @@ export const DashboardWrapper = styled.section`
 export const Card = styled.article`
   margin-bottom: 25px;
   background-color: white;
+  position: relative;
   .card {
     &__image {
-      height: 140px;
+      height: 220px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       background-image: ${props => `url(${props.image})`};
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+      &:before {
+        content: "";
+        background: rgba(0, 0, 0, 0.15);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
     }
     &__content {
       padding: 20px;
-      color: black;
+      color: white;
+      text-transform: uppercase;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__tags {
+      position: absolute;
     }
   }
 `;
 
 export const Tag = styled.div`
-  border: 1px solid blue;
+  border: 1px solid white;
   display: inline-block;
-  padding: 0 5px;
-  margin-right: 5px;
-  background-color: purple;
+  padding: 5px;
+  margin-right: 10px;
+  background-color: transparent;
   color: white;
 `;
 
@@ -60,4 +82,61 @@ export const ContentWrapper = styled.article`
     padding: 0 100px;
     min-width: 1000px;
   }
+`;
+
+export const NavigationWrapper = styled.div`
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70px;
+  z-index: 11;
+  display: flex;
+  background: #49ccfd;
+`;
+
+export const Navigation = styled.ul`
+  display: flex;
+  background: #49ccfd;
+  color: white;
+  max-width: 1000px;
+  margin: auto;
+  flex: 1 0 auto;
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 10px;
+    svg {
+      margin-top: -20px;
+      color: white;
+    }
+    span {
+      position: absolute;
+      bottom: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+`;
+
+export const Circle = styled.article`
+  position: absolute;
+  top: -15px;
+  right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: ${props => props.theme.primary.main};
+  z-index: 111;
+  font-size: 12px;
+`;
+
+export const IconWrapper = styled.div`
+  position: relative;
 `;
