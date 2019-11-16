@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DashboardWrapper = styled.section`
   max-width: 1000px;
-  padding: 20px;
+  padding: 90px 20px 0px;
   height: calc(100vh - 70px);
   background: rgb(242, 132, 65);
   background: ${props =>
@@ -92,7 +92,6 @@ export const NavigationWrapper = styled.div`
   right: 0;
   bottom: 0;
   height: 70px;
-  z-index: 11;
   display: flex;
   background: white;
 `;

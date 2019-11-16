@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Image from "../../assets/sample.jpeg";
 import logo from "../../assets/sample.jpeg";
 import Park from "../Icons/Park";
 import Arrow from "../Icons/Arrow";
+import Close from "../Icons/Close";
 
 const Header = styled.div`
   display: flex;
   background-color: white;
   z-index: 1;
   min-height: 70px;
+  position: fixed;
+  width: 100%;
 `;
 
 const Profile = styled.div`
@@ -60,17 +63,42 @@ const ParkIcon = styled.div`
   }
 `;
 
+const Dropdown = styled.div`
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: white;
+  height: 100vh;
+  z-index: 111;
+  padding: 20px;
+
+  h1 {
+    color: #999;
+    font-weight: bold;
+    font-family: avenirblack, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+  }
+`;
+
 export default ({ history }) => {
+  const [dropdownVisible, setDropdownVisible] = useState(false);
   return (
     <Header>
       <LogoContainer>
         <Logo />
       </LogoContainer>
-      <ParkIcon>
+      <ParkIcon onClick={() => setDropdownVisible(!dropdownVisible)}>
         <Park />
         <h1>Nuuksio</h1>
-        <Arrow />
+        {dropdownVisible ? <Close /> : <Arrow />}
       </ParkIcon>
+      {dropdownVisible && (
+        <Dropdown>
+          <h1>Choose your park</h1>
+        </Dropdown>
+      )}
     </Header>
   );
 };
