@@ -58,7 +58,7 @@ export default ({ onClick }) => {
               color={"#ec5d86"}
               onClick={() => setSelected("Plan")}
             >
-              <Map color={selected === "Plan" ? "#ec5d86" : "#5b5a5a"} />
+              <Map color={selected === "Plan" ? "#ec5d86" : "#999"} />
               <span>Plan</span>
             </Item>
           </ItemWrapper>
@@ -68,7 +68,7 @@ export default ({ onClick }) => {
               color={"#F77064"}
               onClick={() => setSelected("Explore")}
             >
-              <Explore color={selected === "Explore" ? "#F77064" : "#5b5a5a"} />
+              <Explore color={selected === "Explore" ? "#F77064" : "#999"} />
               <span>Explore</span>
             </Item>
           </ItemWrapper>
@@ -78,7 +78,7 @@ export default ({ onClick }) => {
               color={"#FA874D"}
               onClick={() => setSelected("Account")}
             >
-              <Account color={selected === "Account" ? "#FA874D" : "#5b5a5a"} />
+              <Account color={selected === "Account" ? "#FA874D" : "#999"} />
               <span>Account</span>
             </Item>
           </ItemWrapper>
