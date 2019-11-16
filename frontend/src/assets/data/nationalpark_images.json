@@ -1,42 +1,52 @@
 [
   {
     "name": "Pallas-Yllästunturi",
-    "image": "pallasyllastunturi.jpg"
+    "image": "pallasyllastunturi.jpg",
+    "region": "Lapland"
   },
   {
     "name": "Nuuksio",
-    "image": "nuuksio.jpg"
+    "image": "nuuksio.jpg",
+    "region": "Uusimaa"
   },
   {
     "name": "Repovesi",
-    "image": "reposevi.jpg"
+    "image": "reposevi.jpg",
+    "region": "Kymenlaakso, Etelä-Savo"
   },
   {
     "name": "Hossa",
-    "image": "hossa.jpg"
+    "image": "hossa.jpg",
+    "region": "Kuusamo"
   },
   {
     "name": "Archipelago",
-    "image": "archipelago.jpg"
+    "image": "archipelago.jpg",
+    "region": "Varsinais-Suomi"
   },
   {
     "name": "Riisitunturi",
-    "image": "riisitunturi.jpg"
+    "image": "riisitunturi.jpg",
+    "region": "Lapland"
   },
   {
     "name": "Pyha-Luosto",
-    "image": "pyha-luosto.jpg"
+    "image": "pyha-luosto.jpg",
+    "region": "Lapland"
   },
   {
     "name": "Oulanka",
-    "image": "oulanka.jpg"
+    "image": "oulanka.jpg",
+    "region": "Lapland, Pohjois-Pohjanmaa"
   },
   {
     "name": "Koli",
-    "image": "koli.jpg"
+    "image": "koli.jpg",
+    "region": "Pohjois-Karjala"
   },
   {
     "name": "Urho Kekkonen",
-    "image": "urho-kekkonen.jpg"
+    "image": "urho-kekkonen.jpg",
+    "region": "Lapland"
   }
 ]
