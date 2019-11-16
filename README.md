@@ -19,4 +19,5 @@ An app for national parks. It provides visitors valuable, configurable informati
 
 
 ## Useful links
-*(Copy relevant links below.)*
+
+https://www.syke.fi/en-US/Open_information/Spatial_datasets/Downloadable_spatial_dataset
