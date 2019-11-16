@@ -20,4 +20,8 @@ An app for national parks. It provides visitors valuable, configurable informati
 
 ## Useful links
 
-https://www.syke.fi/en-US/Open_information/Spatial_datasets/Downloadable_spatial_dataset
+### Data
+Handy data set - https://www.syke.fi/en-US/Open_information/Spatial_datasets/Downloadable_spatial_dataset
+
+### Design
+Color gradient VisitFinland.com - https://coolors.co/fb9f62-fa874d-f77064-f66276-f45587
