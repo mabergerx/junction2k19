@@ -57,7 +57,7 @@ const ParkIcon = styled.div`
     font-family: avenirblack, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     align-self: flex-end;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
     margin-right: 5px;
     margin-left: -3px;
     border-bottom: 3px solid;

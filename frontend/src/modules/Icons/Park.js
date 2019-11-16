@@ -22,8 +22,8 @@ class Icon extends React.Component {
 }
 
 Icon.defaultProps = {
-  width: 30,
-  height: 30,
+  width: 31,
+  height: 31,
   color: "#999"
 };
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DashboardWrapper = styled.section`
-  padding: 90px 20px 70px;
+  padding: 70px 0px 70px;
   min-height: calc(100vh - 160px);
   background: rgb(242, 132, 65);
   background: ${props =>
@@ -16,9 +16,9 @@ export const DashboardWrapper = styled.section`
 `;
 
 export const Card = styled.article`
-  margin-bottom: 25px;
   background-color: white;
   position: relative;
+  width: 240px;
   .card {
     &__image {
       height: 220px;
@@ -147,4 +147,71 @@ export const ItemWrapper = styled.div`
 
 export const AccountWrapper = styled.div`
   background-color: white;
+`;
+
+export const SliderItem = styled.div`
+  background-color: white;
+  margin-right: 10px;
+`;
+
+export const CardWrapper = styled.div`
+  margin: 0px 10px;
+`;
+
+export const InfoPage = styled(Card)`
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  min-height: calc(100vh - 140px);
+  z-index: 111111;
+  background-color: white;
+
+  .card__content {
+    top: 130px;
+  }
+
+  .card__image {
+    &:before {
+      height: 260px;
+    }
+  }
+
+  section {
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    position: absolute;
+  }
+
+  article {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      background-color: #f77064;
+      border: none;
+      padding: 12px;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: avenirblack, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: auto;
+    }
+
+    span,
+    p {
+      line-height: 20px;
+      color: #666;
+    }
+    div {
+      margin: 10px 0px;
+
+      p {
+        font-weight: bold;
+        display: inline;
+      }
+    }
+  }
 `;
