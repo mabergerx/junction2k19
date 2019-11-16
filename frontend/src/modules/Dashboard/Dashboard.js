@@ -4,10 +4,14 @@ import {
   Card,
   Tag,
   Navigation,
-  NavigationWrapper
+  NavigationWrapper,
+  Item,
+  ItemWrapper
 } from "./DashboardComponents";
 import Image from "../../assets/sample.jpeg";
 import Header from "../Header/Header";
+import Map from "../Icons/Map";
+import Explore from "../Icons/Explore";
 
 export default ({ onClick }) => {
   const [selected, setSelected] = useState("Plan");
@@ -15,7 +19,7 @@ export default ({ onClick }) => {
   return (
     <div>
       <Header />
-      <DashboardWrapper>
+      <DashboardWrapper selected={selected}>
         {selected === "Explore" ? (
           <>
             <Card onClick={onClick} image={Image}>
@@ -47,14 +51,33 @@ export default ({ onClick }) => {
       </DashboardWrapper>
       <NavigationWrapper>
         <Navigation>
-          <li onClick={() => setSelected("Plan")}>
-            {/* <Home color={this.isActive("/") ? "#fff" : "#5b5a5a"} /> */}
-            <span>Plan</span>
-          </li>
-          <li onClick={() => setSelected("Explore")}>
-            {/* <Learn color={this.isActive("/learn") ? "#fff" : "#5b5a5a"} /> */}
-            <span>Explore</span>
-          </li>
+          <ItemWrapper>
+            <Item
+              selected={selected === "Plan"}
+              onClick={() => setSelected("Plan")}
+            >
+              <Map color={selected === "Plan" ? "#fff" : "#5b5a5a"} />
+              <span>Plan</span>
+            </Item>
+          </ItemWrapper>
+          <ItemWrapper>
+            <Item
+              selected={selected === "Explore"}
+              onClick={() => setSelected("Explore")}
+            >
+              <Explore color={selected === "Explore" ? "#fff" : "#5b5a5a"} />
+              <span>Explore</span>
+            </Item>
+          </ItemWrapper>
+          <ItemWrapper>
+            <Item
+              selected={selected === "Account"}
+              onClick={() => setSelected("Account")}
+            >
+              <Explore color={selected === "Account" ? "#fff" : "#5b5a5a"} />
+              <span>Account</span>
+            </Item>
+          </ItemWrapper>
         </Navigation>
       </NavigationWrapper>
     </div>
