@@ -22,6 +22,7 @@ import Close from "../Icons/Close";
 import hikingTrails from "../../assets/data/hiking_trails.json";
 import Slider from "../Slider/Slider";
 import { SliderItem } from "./DashboardComponents";
+import Plan from "../Plan/Plan";
 
 export default ({ onClick }) => {
   const [selected, setSelected] = useState("Explore");
@@ -58,7 +59,13 @@ export default ({ onClick }) => {
             </Slider>
           </>
         ) : selected === "Plan" ? (
-          <div>Plan</div>
+          <Plan
+            selectedInterestIDs={
+              [
+                /* TODO: Add interests somewhere. */
+              ]
+            }
+          />
         ) : (
           <AccountWrapper>Account</AccountWrapper>
         )}
