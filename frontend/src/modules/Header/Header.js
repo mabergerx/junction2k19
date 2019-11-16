@@ -5,6 +5,7 @@ import logo from "../../assets/sample.jpeg";
 import Park from "../Icons/Park";
 import Arrow from "../Icons/Arrow";
 import Close from "../Icons/Close";
+import nationalParks from "../../assets/data/nationalpark_images.json";
 
 const Header = styled.div`
   display: flex;
@@ -74,6 +75,11 @@ const Dropdown = styled.div`
   z-index: 111;
   padding: 20px;
 
+  section {
+    overflow: auto;
+    height: calc(100% - 170px);
+  }
+
   h1 {
     color: #999;
     font-weight: bold;
@@ -82,8 +88,42 @@ const Dropdown = styled.div`
   }
 `;
 
+const ListItem = styled.div`
+  background-position: center;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: ${props => `url(images/${props.image})`};
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 10px;
+  &:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+`;
+
 export default ({ history }) => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
+
   return (
     <Header>
       <LogoContainer>
@@ -97,6 +137,13 @@ export default ({ history }) => {
       {dropdownVisible && (
         <Dropdown>
           <h1>Choose your park</h1>
+          <section>
+            {nationalParks.map((park, key) => (
+              <ListItem key={key} image={park.image}>
+                <span>{park.name}</span>
+              </ListItem>
+            ))}
+          </section>
         </Dropdown>
       )}
     </Header>
