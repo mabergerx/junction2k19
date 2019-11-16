@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
-export const JourneyWrapper = styled.section`
+export const DashboardWrapper = styled.section`
   max-width: 1000px;
   padding: 20px;
-  background-color: black;
-  width: 100%;
+  background: rgb(242, 132, 65);
+  background: linear-gradient(
+    rgba(242, 132, 65, 1) 0%,
+    rgba(236, 93, 134, 1) 100%
+  );
   @media screen and (min-width: 1000px) {
     padding-top: 50px;
   }
@@ -12,7 +15,7 @@ export const JourneyWrapper = styled.section`
 
 export const Card = styled.article`
   margin-bottom: 25px;
-  background-color: blue;
+  background-color: white;
   .card {
     &__image {
       height: 140px;
