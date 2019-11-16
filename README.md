@@ -29,3 +29,33 @@ Paper and relevant article - https://www.helsinki.fi/en/news/science-news/visito
 
 ### Design
 Color gradient VisitFinland.com - https://coolors.co/fb9f62-fa874d-f77064-f66276-f45587
+
+### Brainstorm
+Focus is on: Pallas-Yllästunturi National Park
+
+WebappPeople don't need to download it, they can use it through browser
+  - Can be used with and without an account
+
+Homepage
+- Plan your visit
+- Recommend the right path to go on
+- Recommend an entrance(?)
+- Showcase possible activities and viewing points
+- Offer filters for preferences:
+    - type of activities  (hunting/fishing/loving/biking/swimming)
+    - groupformation (family/friends/solo/very old)
+    - time available to spend (1 hour/half day/full day/multiple days)
+    - activity level (maximum chill/slightly active/angry viking)
+
+How?
+- Picture of a map to showcase the path and the options (not navigation)
+- Show option on map
+    - Predetermine paths based on 
+- Ability to remove and request more options
+- Options are selected based on filters and pretrained knowledge
+
+GAMIFICATIONNNNN!!!!1!
+
+Our app does not replace the trip planner for visit finland, it is a complementary feature 
+specifically for national parks. For example; if people decide in their plan in the visit 
+finland app that they want to go national park, they can use our app next
