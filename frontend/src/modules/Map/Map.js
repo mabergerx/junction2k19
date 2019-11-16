@@ -7,17 +7,17 @@ const Map = ReactMapboxGl({
 });
 
 const MapWrapper = styled.div`
-  display: flex;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 `;
 
 export default props => (
-  <MapWrapper>
+  <MapWrapper {...props}>
     <Map
       style="mapbox://styles/xheory/ck31eegwo0mfp1co4kxr8nmd8?fresh=true"
       containerStyle={{ height: "100%", width: "100%" }}
-      center={[24.2957, 60.1827]}
+      center={[24.508737, 60.312675]}
+      zoom={[11]}
     ></Map>
   </MapWrapper>
 );

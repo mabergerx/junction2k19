@@ -17,6 +17,7 @@ import Account from "../Icons/Account";
 import Hike from "../Icons/Hike";
 import Bike from "../Icons/Bike";
 import hikingTrails from "../../assets/data/hiking_trails.json";
+import Plan from "../Plan/Plan";
 
 export default ({ onClick }) => {
   const [selected, setSelected] = useState("Plan");
@@ -41,7 +42,13 @@ export default ({ onClick }) => {
             ))}
           </>
         ) : selected === "Plan" ? (
-          <div>Plan</div>
+          <Plan
+            selectedInterestIDs={
+              [
+                /* TODO: Add interests somewhere. */
+              ]
+            }
+          />
         ) : (
           <AccountWrapper>Account</AccountWrapper>
         )}
