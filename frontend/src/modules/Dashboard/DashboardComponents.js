@@ -92,13 +92,12 @@ export const NavigationWrapper = styled.div`
   height: 70px;
   z-index: 11;
   display: flex;
-  background: #49ccfd;
+  background: white;
 `;
 
 export const Navigation = styled.ul`
   display: flex;
-  background: #49ccfd;
-  color: white;
+  color: #49ccfd;
   max-width: 1000px;
   margin: auto;
   flex: 1 0 auto;
@@ -108,10 +107,8 @@ export const Navigation = styled.ul`
     justify-content: center;
     align-items: center;
     flex: 1;
-    font-size: 10px;
     svg {
       margin-top: -20px;
-      color: white;
     }
     span {
       position: absolute;
@@ -140,3 +137,7 @@ export const Circle = styled.article`
 export const IconWrapper = styled.div`
   position: relative;
 `;
+
+export const Item = styled.li``;
+
+export const ItemWrapper = styled.div``;
