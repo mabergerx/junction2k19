@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Pallas-Yllästunturi",
+    "image": "pallasyllastunturi.jpg"
+  },
+  {
+    "name": "Nuuksio",
+    "image": "nuuksio.jpg"
+  },
+  {
+    "name": "Repovesi",
+    "image": "reposevi.jpg"
+  },
+  {
+    "name": "Hossa",
+    "image": "hossa.jpg"
+  },
+  {
+    "name": "Archipelago",
+    "image": "archipelago.jpg"
+  },
+  {
+    "name": "Riisitunturi",
+    "image": "riisitunturi.jpg"
+  },
+  {
+    "name": "Pyha-Luosto",
+    "image": "pyha-luosto.jpg"
+  },
+  {
+    "name": "Oulanka",
+    "image": "oulanka.jpg"
+  },
+  {
+    "name": "Koli",
+    "image": "koli.jpg"
+  },
+  {
+    "name": "Urho Kekkonen",
+    "image": "urho-kekkonen.jpg"
+  }
+]
