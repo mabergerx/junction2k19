@@ -14,38 +14,31 @@ import Header from "../Header/Header";
 import Map from "../Icons/Map";
 import Explore from "../Icons/Explore";
 import Account from "../Icons/Account";
+import Hike from "../Icons/Hike";
+import Bike from "../Icons/Bike";
+import hikingTrails from "../../assets/data/hiking_trails.json";
 
 export default ({ onClick }) => {
   const [selected, setSelected] = useState("Plan");
-
   return (
     <div>
       <Header />
       <DashboardWrapper selected={selected}>
         {selected === "Explore" ? (
           <>
-            <Card onClick={onClick} image={Image}>
-              <div className="card__image">
-                <div className="card__content">
-                  <h1>Trail name</h1>
+            {hikingTrails.map((trail, key) => (
+              <Card onClick={onClick} image={trail.image} key={key}>
+                <div className="card__image">
+                  <div className="card__content">
+                    <h1>{trail.trail_name}</h1>
+                  </div>
+                  <div className="card__tags">
+                    <Hike />
+                    {trail.trail_name === "takala" && <Bike />}
+                  </div>
                 </div>
-                <div className="card__tags">
-                  <Tag>Sample</Tag>
-                  <Tag new>New</Tag>
-                </div>
-              </div>
-            </Card>
-            <Card onClick={onClick} image={Image}>
-              <div className="card__image">
-                <div className="card__content">
-                  <h1>Trail name</h1>
-                </div>
-                <div className="card__tags">
-                  <Tag>Sample</Tag>
-                  <Tag new>New</Tag>
-                </div>
-              </div>
-            </Card>
+              </Card>
+            ))}
           </>
         ) : selected === "Plan" ? (
           <div>Plan</div>

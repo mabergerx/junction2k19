@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const DashboardWrapper = styled.section`
-  max-width: 1000px;
-  padding: 90px 20px 0px;
-  height: calc(100vh - 70px);
+  padding: 90px 20px 70px;
+  min-height: calc(100vh - 160px);
   background: rgb(242, 132, 65);
   background: ${props =>
     props.selected === "Account"
@@ -26,7 +25,7 @@ export const Card = styled.article`
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: ${props => `url(${props.image})`};
+      background-image: ${props => `url(images/${props.image})`};
       display: flex;
       align-items: flex-end;
       padding: 20px;
@@ -51,6 +50,10 @@ export const Card = styled.article`
     }
     &__tags {
       position: absolute;
+
+      svg {
+        margin-right: 10px;
+      }
     }
   }
 `;
