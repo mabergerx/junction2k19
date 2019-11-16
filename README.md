@@ -21,3 +21,7 @@ An app for national parks. It provides visitors valuable, configurable informati
 ## Useful links
 
 https://www.syke.fi/en-US/Open_information/Spatial_datasets/Downloadable_spatial_dataset
+
+http://www.metsa.fi/documents/10739/3335805/visitornumbers2018.pdf/c78ef820-7415-4d09-81a7-30f49b0c04ce
+
+https://www.helsinki.fi/en/news/science-news/visitor-patterns-and-emerging-activities-in-national-parks-revealed-by-social-media-posts
