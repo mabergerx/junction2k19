@@ -5,10 +5,12 @@ export const DashboardWrapper = styled.section`
   padding: 20px;
   height: calc(100vh - 70px);
   background: rgb(242, 132, 65);
-  background: linear-gradient(
-    rgba(242, 132, 65, 1) 0%,
-    rgba(236, 93, 134, 1) 100%
-  );
+  background: ${props =>
+    props.selected === "Account"
+      ? "linear-gradient(rgba(251,159,98,1) 0%, rgba(247,112,100,1) 100%)"
+      : props.selected === "Explore"
+      ? "linear-gradient(rgba(242, 132, 65, 1) 0%,rgba(236, 93, 134, 1) 100%)"
+      : "linear-gradient(rgba(247,112,100,1) 0%, rgba(236,93,134,1) 100%)"};
   @media screen and (min-width: 1000px) {
     padding-top: 50px;
   }
@@ -101,22 +103,9 @@ export const Navigation = styled.ul`
   max-width: 1000px;
   margin: auto;
   flex: 1 0 auto;
-  li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    svg {
-      margin-top: -20px;
-    }
-    span {
-      position: absolute;
-      bottom: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-  }
+  font-weight: bold;
+  font-family: avenirblack, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-inline-start: 0px;
 `;
 
 export const Circle = styled.article`
@@ -138,6 +127,18 @@ export const IconWrapper = styled.div`
   position: relative;
 `;
 
-export const Item = styled.li``;
+export const Item = styled.li`
+  color: ${props => (props.selected ? props.color : "#999")};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-export const ItemWrapper = styled.div``;
+  span {
+    margin-top: 5px;
+  }
+`;
+
+export const ItemWrapper = styled.div`
+  flex: 1 0 33%;
+`;
