@@ -2,11 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import Image from "../../assets/sample.jpeg";
 import logo from "../../assets/sample.jpeg";
+import Park from "../Icons/Park";
+import Arrow from "../Icons/Arrow";
 
 const Header = styled.div`
   display: flex;
   background-color: white;
   z-index: 1;
+  min-height: 70px;
 `;
 
 const Profile = styled.div`
@@ -39,17 +42,35 @@ const Logo = styled.div`
   background-color: white;
 `;
 
+const ParkIcon = styled.div`
+  padding: 10px;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    color: #999;
+    font-weight: bold;
+    font-family: avenirblack, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    align-self: flex-end;
+    margin-bottom: 12px;
+    margin-right: 5px;
+    margin-left: -3px;
+    border-bottom: 3px solid;
+  }
+`;
+
 export default ({ history }) => {
   return (
     <Header>
       <LogoContainer>
         <Logo />
       </LogoContainer>
-      <Profile
-        className="Dashboard__Profile"
-        image={Image}
-        onClick={() => history.push("/profile")}
-      />
+      <ParkIcon>
+        <Park />
+        <h1>Nuuksio</h1>
+        <Arrow />
+      </ParkIcon>
     </Header>
   );
 };
