@@ -1,7 +1,8 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import ReactMapboxGl, { Marker } from "react-mapbox-gl";
 import nuuksioData from "../../assets/data/nuuksio.json";
+import Position from "../../modules/Icons/Position";
 
 const Mapbox = ReactMapboxGl({
   accessToken: process.env.REACT_APP_MAPBOX_ACCESS_TOKEN
@@ -23,7 +24,7 @@ const renderMarker = (id, location, categories) => {
       coordinates={location}
       hike={categories[0] === "hike"}
     >
-      Icon here
+      <Position />
     </StyledMarker>
   );
 };
