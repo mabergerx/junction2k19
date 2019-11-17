@@ -49,6 +49,10 @@ export default ({
   hasSuggestions,
   callbackFromParent,
   prevList,
+  setFirstSearch,
+  firstSearch,
+  filterOpen,
+  setFilterOpen,
   ...restProps
 }) => {
   const [state, setState] = useState({
@@ -76,7 +80,6 @@ export default ({
     open: false,
     card: {}
   });
-  const [filterOpen, setFilterOpen] = useState(true);
 
   const enabledFilters = () => {
     const filters = [];
@@ -141,6 +144,7 @@ export default ({
 
     setNuuksio(filteredNuuksio);
     setFilterOpen(false);
+    setFirstSearch(true);
   };
 
   useEffect(() => {
@@ -155,7 +159,7 @@ export default ({
   return (
     <div style={{ maxHeight: "calc(100vh - 140px)", overflow: "auto" }}>
       <PlanWrapper {...restProps}>
-        {!filterOpen ? (
+        {!filterOpen && firstSearch ? (
           <>
             <Map className="map" />
             <Slider header={"Recommended activities"}>

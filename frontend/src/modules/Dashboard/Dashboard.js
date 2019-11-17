@@ -36,10 +36,19 @@ export default ({ onClick }) => {
   });
   const [notification, setNotification] = useState(false);
   const [list, setList] = useState([]);
+  const [firstSearch, setFirstSearch] = useState(false);
+  const [filterOpen, setFilterOpen] = useState(true);
 
   const myCallback = dataFromChild => {
-    console.log(dataFromChild);
     setList(dataFromChild);
+  };
+
+  const searchCallback = dataFromChild => {
+    setFirstSearch(dataFromChild);
+  };
+
+  const filterCallback = dataFromChild => {
+    setFilterOpen(dataFromChild);
   };
 
   const handleOnClickPlan = () => {
@@ -85,6 +94,10 @@ export default ({ onClick }) => {
         ) : selected === "Plan" ? (
           <Plan
             prevList={list}
+            firstSearch={firstSearch}
+            setFirstSearch={searchCallback}
+            filterOpen={filterOpen}
+            setFilterOpen={filterCallback}
             callbackFromParent={myCallback}
             selectedInterestIDs={
               [
