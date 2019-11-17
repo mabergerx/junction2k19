@@ -34,7 +34,7 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
 
   return (
     <PlanWrapper {...restProps}>
-      {hasSuggestions ? (
+      {!hasSuggestions ? (
         <>
           <Map className="map" />
           <Slider header={"Recommended activities"}>
@@ -51,6 +51,11 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
                       //onClick={() => setState({ card: trail, open: true })}
                       >
                         Read more
+                      </button>
+                      <button
+                      //onClick={() => setState({ card: trail, open: true })}
+                      >
+                        Show on map
                       </button>
                     </div>
                     <div className="card__tags">

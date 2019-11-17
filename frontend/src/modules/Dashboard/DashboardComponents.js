@@ -235,11 +235,16 @@ export const InfoPage = styled(Card)`
 export const SmallCard = styled(Card)`
   .card {
     &__image {
-      height: 150px;
+      height: 190px;
     }
     &__tags {
       flex-direction: column;
       display: flex;
+    }
+    &__content {
+      button {
+        margin-bottom: 10px;
+      }
     }
   }
 `;
@@ -306,3 +311,5 @@ export const FlatButton = styled.button`
   border-radius: 10px;
   font-weight: bold;
 `;
+
+export const ToDoListItem = styled.div``;
