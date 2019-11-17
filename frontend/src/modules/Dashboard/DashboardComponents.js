@@ -272,6 +272,7 @@ export const Container = styled.div`
     display: flex;
     padding-inline-start: 0px;
     margin-block-start: 0px;
+    flex-wrap: wrap;
   }
 
   footer {
@@ -306,7 +307,7 @@ export const FlatButton = styled.button`
   height: 50px;
   display: flex;
   background-color: "#fff";
-  margin-right: 5px;
+  margin: 5px;
   outline: none;
   color: ${props => (props.selected ? "#f77064" : "white")};
   border-radius: 10px;

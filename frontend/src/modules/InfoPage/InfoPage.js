@@ -4,7 +4,12 @@ import Hike from "../Icons/Hike";
 import Bike from "../Icons/Bike";
 import React from "react";
 
-export default ({ onClick, card }) => {
+export default ({ onClick, card, handleOnClick }) => {
+  const handleOnClickAndClose = () => {
+    handleOnClick();
+    onClick();
+  };
+
   return (
     <InfoPage image={card.image}>
       <section onClick={onClick}>
@@ -37,7 +42,9 @@ export default ({ onClick, card }) => {
           <p>Route marking: </p>
           <span>{card.route_marking}</span>
         </div>
-        <button>Add to my plan</button>
+        <button onClick={() => handleOnClickAndClose()}>
+          Add to my to-do list
+        </button>
       </article>
     </InfoPage>
   );
