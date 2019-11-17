@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c57a459f-4f48-4aea-9cf7-ad631ae702f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/B2B_dashboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Twitter_data/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Twitter_data/twitter_pictures.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Twitter_data/twitter_users.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash-oil-and-gas-copy/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash-oil-and-gas-copy/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notebooks/Twitter API.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../notebooks/Twitter API.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dash-oil-and-gas-copy/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-292">
-              <caret line="306" column="90" selection-start-line="306" selection-start-column="90" selection-end-line="306" selection-end-column="90" />
+            <state relative-caret-position="425">
+              <caret line="591" column="29" selection-start-line="591" selection-start-column="29" selection-end-line="591" selection-end-column="29" />
               <folding>
                 <element signature="e#28#41#0" expanded="true" />
               </folding>
@@ -44,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dash-oil-and-gas/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
+            <state relative-caret-position="612">
               <caret line="228" column="9" selection-start-line="228" selection-start-column="9" selection-end-line="228" selection-end-column="9" />
             </state>
           </provider>
@@ -252,22 +248,22 @@
     <entry file="file://$PROJECT_DIR$/B2B_dashboard.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dash-oil-and-gas/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="228" column="9" selection-start-line="228" selection-start-column="9" selection-end-line="228" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dash-oil-and-gas/controls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1485" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dash-oil-and-gas/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="228" column="9" selection-start-line="228" selection-start-column="9" selection-end-line="228" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dash-oil-and-gas-copy/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-292">
-          <caret line="306" column="90" selection-start-line="306" selection-start-column="90" selection-end-line="306" selection-end-column="90" />
+        <state relative-caret-position="425">
+          <caret line="591" column="29" selection-start-line="591" selection-start-column="29" selection-end-line="591" selection-end-column="29" />
           <folding>
             <element signature="e#28#41#0" expanded="true" />
           </folding>

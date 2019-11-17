@@ -150,16 +150,26 @@ app.layout = html.Div(
                         ),
                         html.P(id='output-container-range-slider')
                     ],
-                    className="pretty_container four columns",
+                    className="pretty_container twelve columns",
                     id="cross-filter-options",
                 ),
-                html.Div(
-                    [dcc.Graph(id="check_in_stats")],
-                            className="pretty_container eight columns",
-                )
             ],
             className="row flex-display",
         ),
+        html.Div(
+            [
+                html.Div(
+                    [dcc.Graph(id="check_in_stats")],
+                    className="pretty_container six columns",
+                ),
+                html.Div(
+                    [dcc.Graph(id="map_check_in")],
+                    className="pretty_container six columns",
+                ),
+            ],
+            className="row flex-display",
+        ),
+
         html.Div(
             [
                 html.Div(
@@ -169,6 +179,24 @@ app.layout = html.Div(
             ],
             className="row flex-display",
         ),
+
+        html.Div(
+            [
+                html.Div(
+                    [dcc.Graph(id="hobbys_graph")],
+                    className="pretty_container six columns",
+                ),
+                html.Div(
+                    [dcc.Graph(id="trail_complexity_graph")],
+                    className="pretty_container six columns",
+                ),
+            ],
+            className="row flex-display",
+        ),
+        html.Div(
+            [dcc.Graph(id="likes_graph")],
+            className="pretty_container twelve columns",
+        ),
     ],
     id="mainContainer",
     style={"display": "flex", "flex-direction": "column"},
@@ -177,85 +205,28 @@ app.layout = html.Div(
 
 # Helper functions
 
+def filter_dataframe_last_row(columns, year_slider):
+    months_map = {
+                1: 'January',
+                2: 'February',
+                3: 'March',
+                4: 'April',
+                5: 'May',
+                6: 'June',
+                7: 'July',
+                8: 'August',
+                9: 'September',
+                10: 'October',
+                11: 'November',
+                12: 'December'
+            }
 
-# def human_format(num):
-#     if num == 0:
-#         return "0"
-#
-#     magnitude = int(math.log(num, 1000))
-#     mantissa = str(int(num / (1000 ** magnitude)))
-#     return mantissa + ["", "K", "M", "G", "T", "P"][magnitude]
-#
-#
-# def filter_dataframe(df, well_statuses, well_types, year_slider):
-#     dff = df[
-#         df["Well_Status"].isin(well_statuses)
-#         & df["Well_Type"].isin(well_types)
-#         & (df["Date_Well_Completed"] > dt.datetime(year_slider[0], 1, 1))
-#         & (df["Date_Well_Completed"] < dt.datetime(year_slider[1], 1, 1))
-#     ]
-#     return dff
-#
-#
-# def produce_individual(api_well_num):
-#     try:
-#         points[api_well_num]
-#     except:
-#         return None, None, None, None
-#
-#     index = list(
-#         range(min(points[api_well_num].keys()), max(points[api_well_num].keys()) + 1)
-#     )
-#     gas = []
-#     oil = []
-#     water = []
-#
-#     for year in index:
-#         try:
-#             gas.append(points[api_well_num][year]["Gas Produced, MCF"])
-#         except:
-#             gas.append(0)
-#         try:
-#             oil.append(points[api_well_num][year]["Oil Produced, bbl"])
-#         except:
-#             oil.append(0)
-#         try:
-#             water.append(points[api_well_num][year]["Water Produced, bbl"])
-#         except:
-#             water.append(0)
-#
-#     return index, gas, oil, water
-#
-#
-# def produce_aggregate(selected, year_slider):
-#
-#     index = list(range(max(year_slider[0], 1985), 2016))
-#     gas = []
-#     oil = []
-#     water = []
-#
-#     for year in index:
-#         count_gas = 0
-#         count_oil = 0
-#         count_water = 0
-#         for api_well_num in selected:
-#             try:
-#                 count_gas += points[api_well_num][year]["Gas Produced, MCF"]
-#             except:
-#                 pass
-#             try:
-#                 count_oil += points[api_well_num][year]["Oil Produced, bbl"]
-#             except:
-#                 pass
-#             try:
-#                 count_water += points[api_well_num][year]["Water Produced, bbl"]
-#             except:
-#                 pass
-#         gas.append(count_gas)
-#         oil.append(count_oil)
-#         water.append(count_water)
-#
-#     return index, gas, oil, water
+    # if year_slider is not None:
+    month_letters = [months_map[element] for element in year_slider]
+
+    for_user_overview = pd.read_csv('data/mock_data_filters.csv', header=0)
+    selected = for_user_overview.loc[for_user_overview['month'].isin(month_letters)]
+    return selected[columns]
 
 
 # # Create callbacks
@@ -298,7 +269,6 @@ def make_twitter_figure(year_slider):
 
     for_twitter_location = pd.read_csv('data/twitter_location_df.csv', header=0)
     selected = for_twitter_location.loc[for_twitter_location['month'].isin(month_letters)]
-    print(selected)
 
     fig = px.bar(selected, x='country', y='count')
 
@@ -357,368 +327,282 @@ def make_check_in_stats(year_slider):
     return fig
 
 
-# app.clientside_callback(
-#     ClientsideFunction(namespace="clientside", function_name="resize"),
-#     Output("output-clientside", "children"),
-#     [Input("count_graph", "figure")],
-# )
-#
-#
-# @app.callback(
-#     Output("aggregate_data", "data"),
-#     [
-#         Input("well_statuses", "value"),
-#         Input("well_types", "value"),
-#         Input("year_slider", "value"),
-#     ],
-# )
-# def update_production_text(well_statuses, well_types, year_slider):
-#
-#     dff = filter_dataframe(df, well_statuses, well_types, year_slider)
-#     selected = dff["API_WellNo"].values
-#     index, gas, oil, water = produce_aggregate(selected, year_slider)
-#     return [human_format(sum(gas)), human_format(sum(oil)), human_format(sum(water))]
-#
-#
-# # Radio -> multi
-# @app.callback(
-#     Output("well_statuses", "value"), [Input("well_status_selector", "value")]
-# )
-# def display_status(selector):
-#     if selector == "all":
-#         return list(WELL_STATUSES.keys())
-#     elif selector == "active":
-#         return ["AC"]
-#     return []
-#
-#
-# # Radio -> multi
-# @app.callback(Output("well_types", "value"), [Input("well_type_selector", "value")])
-# def display_type(selector):
-#     if selector == "all":
-#         return list(WELL_TYPES.keys())
-#     elif selector == "productive":
-#         return ["GD", "GE", "GW", "IG", "IW", "OD", "OE", "OW"]
-#     return []
-#
-#
-# # Slider -> count graph
-# @app.callback(Output("year_slider", "value"), [Input("count_graph", "selectedData")])
-# def update_year_slider(count_graph_selected):
-#
-#     if count_graph_selected is None:
-#         return [1990, 2010]
-#
-#     nums = [int(point["pointNumber"]) for point in count_graph_selected["points"]]
-#     return [min(nums) + 1960, max(nums) + 1961]
-#
-#
-# # Selectors -> well text
-# @app.callback(
-#     Output("well_text", "children"),
-#     [
-#         Input("well_statuses", "value"),
-#         Input("well_types", "value"),
-#         Input("year_slider", "value"),
-#     ],
-# )
-# def update_well_text(well_statuses, well_types, year_slider):
-#
-#     dff = filter_dataframe(df, well_statuses, well_types, year_slider)
-#     return dff.shape[0]
-#
-#
-# @app.callback(
-#     [
-#         Output("gasText", "children"),
-#         Output("oilText", "children"),
-#         Output("waterText", "children"),
-#     ],
-#     [Input("aggregate_data", "data")],
-# )
-# def update_text(data):
-#     return data[0] + " mcf", data[1] + " bbl", data[2] + " bbl"
-#
-#
-# # Selectors -> main graph
-# @app.callback(
-#     Output("main_graph", "figure"),
-#     [
-#         Input("well_statuses", "value"),
-#         Input("well_types", "value"),
-#         Input("year_slider", "value"),
-#     ],
-#     [State("lock_selector", "value"), State("main_graph", "relayoutData")],
-# )
-# def make_main_figure(
-#     well_statuses, well_types, year_slider, selector, main_graph_layout
-# ):
-#
-#     dff = filter_dataframe(df, well_statuses, well_types, year_slider)
-#
-#     traces = []
-#     for well_type, dfff in dff.groupby("Well_Type"):
-#         trace = dict(
-#             type="scattermapbox",
-#             lon=dfff["Surface_Longitude"],
-#             lat=dfff["Surface_latitude"],
-#             text=dfff["Well_Name"],
-#             customdata=dfff["API_WellNo"],
-#             name=WELL_TYPES[well_type],
-#             marker=dict(size=4, opacity=0.6),
-#         )
-#         traces.append(trace)
-#
-#     # relayoutData is None by default, and {'autosize': True} without relayout action
-#     if main_graph_layout is not None and selector is not None and "locked" in selector:
-#         if "mapbox.center" in main_graph_layout.keys():
-#             lon = float(main_graph_layout["mapbox.center"]["lon"])
-#             lat = float(main_graph_layout["mapbox.center"]["lat"])
-#             zoom = float(main_graph_layout["mapbox.zoom"])
-#             layout["mapbox"]["center"]["lon"] = lon
-#             layout["mapbox"]["center"]["lat"] = lat
-#             layout["mapbox"]["zoom"] = zoom
-#
-#     figure = dict(data=traces, layout=layout)
-#     return figure
-#
-#
-# # Main graph -> individual graph
-# @app.callback(Output("individual_graph", "figure"), [Input("main_graph", "hoverData")])
-# def make_individual_figure(main_graph_hover):
-#
-#     layout_individual = copy.deepcopy(layout)
-#
-#     if main_graph_hover is None:
-#         main_graph_hover = {
-#             "points": [
-#                 {"curveNumber": 4, "pointNumber": 569, "customdata": 31101173130000}
-#             ]
-#         }
-#
-#     chosen = [point["customdata"] for point in main_graph_hover["points"]]
-#     index, gas, oil, water = produce_individual(chosen[0])
-#
-#     if index is None:
-#         annotation = dict(
-#             text="No data available",
-#             x=0.5,
-#             y=0.5,
-#             align="center",
-#             showarrow=False,
-#             xref="paper",
-#             yref="paper",
-#         )
-#         layout_individual["annotations"] = [annotation]
-#         data = []
-#     else:
-#         data = [
-#             dict(
-#                 type="scatter",
-#                 mode="lines+markers",
-#                 name="Gas Produced (mcf)",
-#                 x=index,
-#                 y=gas,
-#                 line=dict(shape="spline", smoothing=2, width=1, color="#fac1b7"),
-#                 marker=dict(symbol="diamond-open"),
-#             ),
-#             dict(
-#                 type="scatter",
-#                 mode="lines+markers",
-#                 name="Oil Produced (bbl)",
-#                 x=index,
-#                 y=oil,
-#                 line=dict(shape="spline", smoothing=2, width=1, color="#a9bb95"),
-#                 marker=dict(symbol="diamond-open"),
-#             ),
-#             dict(
-#                 type="scatter",
-#                 mode="lines+markers",
-#                 name="Water Produced (bbl)",
-#                 x=index,
-#                 y=water,
-#                 line=dict(shape="spline", smoothing=2, width=1, color="#92d8d8"),
-#                 marker=dict(symbol="diamond-open"),
-#             ),
-#         ]
-#         layout_individual["title"] = dataset[chosen[0]]["Well_Name"]
-#
-#     figure = dict(data=data, layout=layout_individual)
-#     return figure
-#
-#
-# # Selectors, main graph -> aggregate graph
-# @app.callback(
-#     Output("aggregate_graph", "figure"),
-#     [
-#         Input("well_statuses", "value"),
-#         Input("well_types", "value"),
-#         Input("year_slider", "value"),
-#         Input("main_graph", "hoverData"),
-#     ],
-# )
-# def make_aggregate_figure(well_statuses, well_types, year_slider, main_graph_hover):
-#
-#     layout_aggregate = copy.deepcopy(layout)
-#
-#     if main_graph_hover is None:
-#         main_graph_hover = {
-#             "points": [
-#                 {"curveNumber": 4, "pointNumber": 569, "customdata": 31101173130000}
-#             ]
-#         }
-#
-#     chosen = [point["customdata"] for point in main_graph_hover["points"]]
-#     well_type = dataset[chosen[0]]["Well_Type"]
-#     dff = filter_dataframe(df, well_statuses, well_types, year_slider)
-#
-#     selected = dff[dff["Well_Type"] == well_type]["API_WellNo"].values
-#     index, gas, oil, water = produce_aggregate(selected, year_slider)
-#
-#     data = [
-#         dict(
-#             type="scatter",
-#             mode="lines",
-#             name="Gas Produced (mcf)",
-#             x=index,
-#             y=gas,
-#             line=dict(shape="spline", smoothing="2", color="#F9ADA0"),
-#         ),
-#         dict(
-#             type="scatter",
-#             mode="lines",
-#             name="Oil Produced (bbl)",
-#             x=index,
-#             y=oil,
-#             line=dict(shape="spline", smoothing="2", color="#849E68"),
-#         ),
-#         dict(
-#             type="scatter",
-#             mode="lines",
-#             name="Water Produced (bbl)",
-#             x=index,
-#             y=water,
-#             line=dict(shape="spline", smoothing="2", color="#59C3C3"),
-#         ),
-#     ]
-#     layout_aggregate["title"] = "Aggregate: " + WELL_TYPES[well_type]
-#
-#     figure = dict(data=data, layout=layout_aggregate)
-#     return figure
-#
-#
-# # Selectors, main graph -> pie graph
-# @app.callback(
-#     Output("pie_graph", "figure"),
-#     [
-#         Input("well_statuses", "value"),
-#         Input("well_types", "value"),
-#         Input("year_slider", "value"),
-#     ],
-# )
-# def make_pie_figure(well_statuses, well_types, year_slider):
-#
-#     layout_pie = copy.deepcopy(layout)
-#
-#     dff = filter_dataframe(df, well_statuses, well_types, year_slider)
-#
-#     selected = dff["API_WellNo"].values
-#     index, gas, oil, water = produce_aggregate(selected, year_slider)
-#
-#     aggregate = dff.groupby(["Well_Type"]).count()
-#
-#     data = [
-#         dict(
-#             type="pie",
-#             labels=["Gas", "Oil", "Water"],
-#             values=[sum(gas), sum(oil), sum(water)],
-#             name="Production Breakdown",
-#             text=[
-#                 "Total Gas Produced (mcf)",
-#                 "Total Oil Produced (bbl)",
-#                 "Total Water Produced (bbl)",
-#             ],
-#             hoverinfo="text+value+percent",
-#             textinfo="label+percent+name",
-#             hole=0.5,
-#             marker=dict(colors=["#fac1b7", "#a9bb95", "#92d8d8"]),
-#             domain={"x": [0, 0.45], "y": [0.2, 0.8]},
-#         ),
-#         dict(
-#             type="pie",
-#             labels=[WELL_TYPES[i] for i in aggregate.index],
-#             values=aggregate["API_WellNo"],
-#             name="Well Type Breakdown",
-#             hoverinfo="label+text+value+percent",
-#             textinfo="label+percent+name",
-#             hole=0.5,
-#             marker=dict(colors=[WELL_COLORS[i] for i in aggregate.index]),
-#             domain={"x": [0.55, 1], "y": [0.2, 0.8]},
-#         ),
-#     ]
-#     layout_pie["title"] = "Production Summary: {} to {}".format(
-#         year_slider[0], year_slider[1]
-#     )
-#     layout_pie["font"] = dict(color="#777777")
-#     layout_pie["legend"] = dict(
-#         font=dict(color="#CCCCCC", size="10"), orientation="h", bgcolor="rgba(0,0,0,0)"
-#     )
-#
-#     figure = dict(data=data, layout=layout_pie)
-#     return figure
-#
-#
-# # Selectors -> count graph
-# @app.callback(
-#     Output("count_graph", "figure"),
-#     [
-#         Input("well_statuses", "value"),
-#         Input("well_types", "value"),
-#         Input("year_slider", "value"),
-#     ],
-# )
-# def make_count_figure(well_statuses, well_types, year_slider):
-#
-#     layout_count = copy.deepcopy(layout)
-#
-#     dff = filter_dataframe(df, well_statuses, well_types, [1960, 2017])
-#     g = dff[["API_WellNo", "Date_Well_Completed"]]
-#     g.index = g["Date_Well_Completed"]
-#     g = g.resample("A").count()
-#
-#     colors = []
-#     for i in range(1960, 2018):
-#         if i >= int(year_slider[0]) and i < int(year_slider[1]):
-#             colors.append("rgb(123, 199, 255)")
-#         else:
-#             colors.append("rgba(123, 199, 255, 0.2)")
-#
-#     data = [
-#         dict(
-#             type="scatter",
-#             mode="markers",
-#             x=g.index,
-#             y=g["API_WellNo"] / 2,
-#             name="All Wells",
-#             opacity=0,
-#             hoverinfo="skip",
-#         ),
-#         dict(
-#             type="bar",
-#             x=g.index,
-#             y=g["API_WellNo"],
-#             name="All Wells",
-#             marker=dict(color=colors),
-#         ),
-#     ]
-#
-#     layout_count["title"] = "Completed Wells/Year"
-#     layout_count["dragmode"] = "select"
-#     layout_count["showlegend"] = False
-#     layout_count["autosize"] = True
-#
-#     figure = dict(data=data, layout=layout_count)
-#     return figure
+@app.callback(
+    Output("map_check_in", "figure"),
+    [
+        Input("year_slider", "value"),
+    ],
+)
+def make_map_stats(year_slider):
+
+
+    year_slider = [1, 12]
+
+    months_map = {
+                1: 'January',
+                2: 'February',
+                3: 'March',
+                4: 'April',
+                5: 'May',
+                6: 'June',
+                7: 'July',
+                8: 'August',
+                9: 'September',
+                10: 'October',
+                11: 'November',
+                12: 'December'
+            }
+
+    # if year_slider is not None:
+    month_letters = [months_map[element] for element in year_slider]
+
+    entrance_data = pd.read_csv('data/monthly_data_entrances_2015 (1).csv', header=0, index_col=0)
+    entrance_data['month'] = entrance_data['month'].map(months_map)
+    entrance_data['month'] = pd.Categorical(entrance_data['month'], ["January", "February", "March",
+                                                                      "April", "May", "June", "July",
+                                                                      "August", "September", "October",
+                                                                      "November", "December"])
+
+    for_selecting = [months_map[i + 1] for i in range(year_slider[1])]
+    print(for_selecting)
+    selected = entrance_data.loc[entrance_data['month'].isin(for_selecting)]
+    print(entrance_data)
+    print(selected)
+
+    px.set_mapbox_access_token("pk.eyJ1IjoiamFja2x1byIsImEiOiJjajNlcnh3MzEwMHZtMzNueGw3NWw5ZXF5In0.fk8k06T96Ml9CLGgKmk81w")
+
+    fig = px.scatter_mapbox(selected, lat="lat", lon="long", color="Visits", hover_name="CounterID_ASTA",
+                            animation_frame="month", size="Visits", hover_data=["month"],
+                            color_continuous_scale=px.colors.cmocean.phase)
+
+    return fig
+
+
+@app.callback(
+    Output("hobbys_graph", "figure"),
+    [
+        Input("year_slider", "value"),
+    ],
+)
+def make_hobbys_graph(year_slider):
+
+    if year_slider is None:
+        year_slider = [1, 1]
+
+    months_map = {
+                1: 'January',
+                2: 'February',
+                3: 'March',
+                4: 'April',
+                5: 'May',
+                6: 'June',
+                7: 'July',
+                8: 'August',
+                9: 'September',
+                10: 'October',
+                11: 'November',
+                12: 'December'
+            }
+
+    # if year_slider is not None:
+    month_letters = [months_map[element] for element in year_slider]
+
+    entrance_data = pd.read_csv('data/mock_data_filters.csv', header=0, index_col=False)
+    entrance_data['month'] = entrance_data['month'].map(months_map)
+    entrance_data['month'] = pd.Categorical(entrance_data['month'], ["January", "February", "March",
+                                                                      "April", "May", "June", "July",
+                                                                      "August", "September", "October",
+                                                                      "November", "December"])
+
+    for_selecting = [months_map[i + 1] for i in range(year_slider[1])]
+    selected = entrance_data.loc[entrance_data['month'].isin(for_selecting)]
+
+    fig = go.Figure()
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['hiking_likes'],
+        name='Hiking Likes',
+        marker_color='#FB9F62'
+    ))
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['cycling_likes'],
+        name='Cycling Likes',
+        marker_color='#F77064'
+    ))
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['fishing_likes'],
+        name='Fishing Likes',
+        marker_color='#F45587'
+    ))
+
+    fig.update_traces(marker_line_color='black',
+                      marker_line_width=1.5, opacity=0.8)
+    fig.update_layout(plot_bgcolor='#f9f9f9', title_text='N of activities enjoyed per: ' + ' - '.join(month_letters))
+
+    return fig
+
+
+@app.callback(
+    Output("trail_complexity_graph", "figure"),
+    [
+        Input("year_slider", "value"),
+    ],
+)
+def make_trails_graph(year_slider):
+
+    if year_slider is None:
+        year_slider = [1, 1]
+
+    months_map = {
+                1: 'January',
+                2: 'February',
+                3: 'March',
+                4: 'April',
+                5: 'May',
+                6: 'June',
+                7: 'July',
+                8: 'August',
+                9: 'September',
+                10: 'October',
+                11: 'November',
+                12: 'December'
+            }
+
+    # if year_slider is not None:
+    month_letters = [months_map[element] for element in year_slider]
+
+    entrance_data = pd.read_csv('data/mock_data_filters.csv', header=0, index_col=False)
+    entrance_data['month'] = entrance_data['month'].map(months_map)
+    entrance_data['month'] = pd.Categorical(entrance_data['month'], ["January", "February", "March",
+                                                                      "April", "May", "June", "July",
+                                                                      "August", "September", "October",
+                                                                      "November", "December"])
+
+    for_selecting = [months_map[i + 1] for i in range(year_slider[1])]
+    selected = entrance_data.loc[entrance_data['month'].isin(for_selecting)]
+
+    fig = go.Figure()
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['easy_trails'],
+        name='Easy trail',
+        marker_color='#FB9F62'
+    ))
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['moderate_trails'],
+        name='Moderate trail',
+        marker_color='#F77064'
+    ))
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['challenging_trails'],
+        name='Challenging trail',
+        marker_color='#F45587'
+    ))
+
+    fig.update_traces(marker_line_color='black',
+                      marker_line_width=1.5, opacity=0.8)
+    fig.update_layout(plot_bgcolor='#f9f9f9', title_text='N of trail complexities done per: ' + ' - '.join(month_letters))
+
+    return fig
+
+@app.callback(
+    Output("likes_graph", "figure"),
+    [
+        Input("year_slider", "value"),
+    ],
+)
+def make_likes_graph(year_slider):
+
+    if year_slider is None:
+        year_slider = [1, 1]
+
+    months_map = {
+                1: 'January',
+                2: 'February',
+                3: 'March',
+                4: 'April',
+                5: 'May',
+                6: 'June',
+                7: 'July',
+                8: 'August',
+                9: 'September',
+                10: 'October',
+                11: 'November',
+                12: 'December'
+            }
+
+    # if year_slider is not None:
+    month_letters = [months_map[element] for element in year_slider]
+
+    entrance_data = pd.read_csv('data/mock_data_filters.csv', header=0, index_col=False)
+    entrance_data['month'] = entrance_data['month'].map(months_map)
+    entrance_data['month'] = pd.Categorical(entrance_data['month'], ["January", "February", "March",
+                                                                      "April", "May", "June", "July",
+                                                                      "August", "September", "October",
+                                                                      "November", "December"])
+
+    for_selecting = [months_map[i + 1] for i in range(year_slider[1])]
+    selected = entrance_data.loc[entrance_data['month'].isin(for_selecting)]
+
+    fig = go.Figure()
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['lodging_likes'],
+        name='Lodging',
+        marker_color='#FB9F62'
+    ))
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['waterside_likes'],
+        name='Watersides',
+        marker_color='#81BEF7'
+    ))
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['natural_landmark_likes'],
+        name='Natural landmarks',
+        marker_color='#A9F5BC'
+    ))
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['animals_likes'],
+        name='Animals',
+        marker_color='#F66276'
+    ))
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['meadow_likes'],
+        name='Meadows',
+        marker_color='#0431B4'
+    ))
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['outdoor_activity_likes'],
+        name='Outdoor activities',
+        marker_color='#FF8000'
+    ))
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['health_fitness_likes'],
+        name='Health & Fitness',
+        marker_color='#088A85'
+    ))
+    fig.add_trace(go.Bar(
+        x=selected['month'],
+        y=selected['food_likes'],
+        name='Food',
+        marker_color='#DA81F5'
+    ))
+
+    fig.update_traces(marker_line_color='black',
+                      marker_line_width=1.5, opacity=0.8)
+    fig.update_layout(plot_bgcolor='#f9f9f9', title_text='N of sightseeings liked per: ' + ' - '.join(month_letters))
+
+    return fig
 
 
 # Main
