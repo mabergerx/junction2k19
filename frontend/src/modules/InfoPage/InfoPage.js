@@ -4,9 +4,16 @@ import Hike from "../Icons/Hike";
 import Bike from "../Icons/Bike";
 import React from "react";
 
-export default ({ onClick, card, handleOnClick }) => {
+export default ({
+  onClick,
+  card,
+  handleOnClick,
+  fromExplore,
+  sendNotification
+}) => {
   const handleOnClickAndClose = () => {
     handleOnClick();
+    fromExplore && sendNotification();
     onClick();
   };
 
