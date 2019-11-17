@@ -63,16 +63,11 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
     outdoor_activity: false
   });
   const [list, setList] = useState([]);
-<<<<<<< HEAD
-  console.log("hikingTrails", nuuksioTrails);
-  console.log(list);
-=======
   const [open, setOpen] = useState({
     open: false,
     card: {}
   });
 
->>>>>>> frontend
   return (
     <div style={{ maxHeight: "calc(100vh - 140px)", overflow: "auto" }}>
       <PlanWrapper {...restProps}>
