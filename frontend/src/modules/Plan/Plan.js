@@ -65,7 +65,7 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
   });
 
   return (
-    <div style={{ maxHeight: "calc(100vh - 140px)" }}>
+    <div style={{ maxHeight: "calc(100vh - 140px)", overflow: "auto" }}>
       <PlanWrapper {...restProps}>
         {!hasSuggestions ? (
           <>
@@ -295,6 +295,7 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
       </PlanWrapper>
       {state.open && (
         <InfoPage
+          handleOnClick={() => setList([...list, state.card])}
           card={state.card}
           onClick={() => setState({ card: {}, open: false })}
         />
