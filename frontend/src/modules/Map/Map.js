@@ -34,7 +34,7 @@ const Map = props => {
         zoom={[11]}
         ref={e => props.mapRefPass(e)}
       >
-        {nuuksioData.map(renderMarker)}
+        {nuuksioData.map(poi => renderMarker(poi.id, poi.location, null))}
       </Mapbox>
     </MapWrapper>
   );
