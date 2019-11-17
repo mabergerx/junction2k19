@@ -1,0 +1,336 @@
+country,count,month
+Finland,192.0,June
+Germany,64.0,June
+France,25.0,June
+United Kingdom,6.0,June
+Denmark,40.0,June
+USA,12.0,June
+Brasil,11.0,June
+England,9.0,June
+Slovak Republic,9.0,June
+New Zealand,3.0,June
+Romania,4.0,June
+Switzerland,8.0,June
+Finland.,1.0,June
+Sweden,83.0,June
+Argentina,1.0,June
+Austria,7.0,June
+Canada,2.0,June
+Iceland,1.0,June
+Spain,3.0,June
+Italy,2.0,June
+Australia,4.0,June
+Norway,58.0,June
+Armenia,1.0,June
+Scotland,1.0,June
+Singapore,3.0,June
+Philippines,1.0,June
+Chile,1.0,June
+Japan,1.0,June
+Belgium,2.0,June
+Russia,1.0,June
+Venezuela,1.0,June
+Belarus,1.0,June
+Paraguay,1.0,June
+Congo {Democratic Rep},27.0,July
+United States,10.0,July
+Malawi,20.0,July
+St Lucia,20.0,July
+Ecuador,34.0,July
+Chad,37.0,July
+Croatia,15.0,July
+Singapore,28.0,July
+Djibouti,13.0,July
+Benin,24.0,July
+Zimbabwe,15.0,July
+Netherlands,33.0,July
+Tuvalu,4.0,July
+United Arab Emirates,20.0,July
+Ecuador,37.0,July
+Thailand,15.0,July
+France,8.0,July
+Vatican City,20.0,July
+Monaco,18.0,July
+Laos,23.0,July
+Malawi,16.0,July
+Zimbabwe,14.0,July
+Gabon,43.0,July
+Finland,157.0,July
+Sierra Leone,22.0,August
+Togo,29.0,August
+Belize,20.0,August
+South Sudan,32.0,August
+East Timor,24.0,August
+South Africa,35.0,August
+Uruguay,30.0,August
+United Kingdom,32.0,August
+Denmark,15.0,August
+Vanuatu,5.0,August
+Azerbaijan,21.0,August
+Liberia,15.0,August
+Congo {Democratic Rep},10.0,August
+Korea South,10.0,August
+Egypt,4.0,August
+Ivory Coast,16.0,August
+Turkey,25.0,August
+Kosovo,4.0,August
+Philippines,33.0,August
+Mongolia,29.0,August
+Afghanistan,19.0,August
+Chad,20.0,August
+United Arab Emirates,29.0,August
+Somalia,24.0,August
+Liechtenstein,17.0,August
+Vanuatu,3.0,August
+India,42.0,August
+Antigua & Deps,12.0,August
+Swaziland,6.0,August
+Argentina,24.0,August
+Finland,175.0,August
+Guinea-Bissau,18.0,September
+Zambia,25.0,September
+Tanzania,24.0,September
+Iran,20.0,September
+Qatar,29.0,September
+Belarus,26.0,September
+Dominican Republic,23.0,September
+Lesotho,23.0,September
+Ecuador,3.0,September
+Portugal,10.0,September
+Czech Republic,20.0,September
+Bolivia,27.0,September
+Zimbabwe,7.0,September
+Suriname,24.0,September
+Madagascar,19.0,September
+Chad,5.0,September
+Denmark,10.0,September
+Yemen,21.0,September
+Tonga,15.0,September
+Serbia,18.0,September
+Gabon,24.0,September
+Bangladesh,24.0,September
+Sri Lanka,33.0,September
+United Arab Emirates,6.0,September
+Congo {Democratic Rep},28.0,September
+Marshall Islands,6.0,September
+Papua New Guinea,23.0,September
+Central African Rep,9.0,September
+Finland,144.0,September
+Jamaica,20.0,October
+Lebanon,26.0,October
+Morocco,24.0,October
+Syria,24.0,October
+Taiwan,9.0,October
+East Timor,22.0,October
+Grenada,23.0,October
+Brunei,16.0,October
+Denmark,15.0,October
+Chile,15.0,October
+United States,32.0,October
+Albania,23.0,October
+Cape Verde,17.0,October
+Lithuania,18.0,October
+Ethiopia,33.0,October
+Guinea,10.0,October
+Greece,4.0,October
+Ukraine,21.0,October
+Iceland,5.0,October
+Somalia,14.0,October
+Finland,128.0,October
+Solomon Islands,29.0,November
+Croatia,10.0,November
+Australia,17.0,November
+Bangladesh,22.0,November
+Vanuatu,22.0,November
+Swaziland,11.0,November
+Bosnia Herzegovina,23.0,November
+Greece,25.0,November
+Somalia,6.0,November
+Saudi Arabia,18.0,November
+Azerbaijan,15.0,November
+Canada,14.0,November
+Romania,15.0,November
+Azerbaijan,20.0,November
+Turkey,12.0,November
+Austria,10.0,November
+Colombia,20.0,November
+Indonesia,12.0,November
+Kiribati,27.0,November
+Central African Rep,56.0,November
+United Kingdom,21.0,November
+United States,19.0,November
+Solomon Islands,14.0,November
+Grenada,18.0,November
+Korea North,20.0,November
+Philippines,17.0,November
+Uganda,23.0,November
+Indonesia,12.0,November
+Taiwan,24.0,November
+Egypt,6.0,November
+Ecuador,14.0,November
+Romania,19.0,November
+Iraq,5.0,November
+Sierra Leone,0.0,November
+Finland,141.0,November
+Norway,8.0,December
+Kyrgyzstan,27.0,December
+Panama,19.0,December
+Togo,22.0,December
+Peru,22.0,December
+Moldova,16.0,December
+Vanuatu,42.0,December
+Lithuania,9.0,December
+East Timor,27.0,December
+Qatar,25.0,December
+Switzerland,22.0,December
+Czech Republic,9.0,December
+Mexico,15.0,December
+Egypt,28.0,December
+Cyprus,35.0,December
+Comoros,14.0,December
+Nepal,50.0,December
+Turkmenistan,31.0,December
+United Arab Emirates,17.0,December
+Nicaragua,33.0,December
+Netherlands,17.0,December
+Sri Lanka,15.0,December
+Taiwan,23.0,December
+Algeria,16.0,December
+Liberia,12.0,December
+Kosovo,13.0,December
+Ukraine,18.0,December
+Nepal,38.0,December
+Singapore,20.0,December
+Finland,176.0,December
+Switzerland,8.0,January
+Papua New Guinea,13.0,January
+Vatican City,8.0,January
+Guyana,18.0,January
+Angola,37.0,January
+Liechtenstein,7.0,January
+South Sudan,29.0,January
+Guinea,25.0,January
+Egypt,26.0,January
+Lesotho,12.0,January
+Eritrea,4.0,January
+Suriname,19.0,January
+Philippines,24.0,January
+Belgium,4.0,January
+South Sudan,30.0,January
+Malawi,19.0,January
+Palau,19.0,January
+Estonia,2.0,January
+Djibouti,11.0,January
+El Salvador,21.0,January
+Kazakhstan,24.0,January
+Andorra,32.0,January
+Dominican Republic,10.0,January
+United Arab Emirates,18.0,January
+Finland,114.0,January
+Gambia,33.0,February
+Iceland,25.0,February
+New Zealand,33.0,February
+Comoros,23.0,February
+Suriname,20.0,February
+Iran,1.0,February
+Pakistan,26.0,February
+Congo {Democratic Rep},10.0,February
+Guinea,31.0,February
+Venezuela,34.0,February
+East Timor,1.0,February
+Kosovo,24.0,February
+Chad,17.0,February
+Hungary,18.0,February
+Switzerland,17.0,February
+Libya,5.0,February
+Brunei,19.0,February
+Botswana,47.0,February
+Georgia,29.0,February
+Cape Verde,20.0,February
+Yemen,4.0,February
+Bahrain,14.0,February
+Sri Lanka,8.0,February
+Burundi,12.0,February
+Oman,16.0,February
+Tunisia,4.0,February
+Finland,140.0,February
+Argentina,11.0,March
+India,21.0,March
+Slovakia,20.0,March
+Sweden,36.0,March
+Turkey,22.0,March
+Djibouti,23.0,March
+Zambia,32.0,March
+Kosovo,6.0,March
+Lebanon,7.0,March
+Kazakhstan,11.0,March
+East Timor,26.0,March
+Tanzania,34.0,March
+Italy,6.0,March
+Korea South,25.0,March
+Turkmenistan,9.0,March
+Morocco,0.0,March
+Argentina,16.0,March
+Seychelles,23.0,March
+Lithuania,22.0,March
+Albania,9.0,March
+Finland,162.0,March
+Samoa,28.0,April
+Mali,26.0,April
+Kuwait,11.0,April
+Jordan,18.0,April
+Uruguay,21.0,April
+Tajikistan,13.0,April
+Sweden,10.0,April
+Lebanon,22.0,April
+Nepal,14.0,April
+Estonia,5.0,April
+Iran,30.0,April
+Tonga,24.0,April
+Brunei,9.0,April
+Macedonia,29.0,April
+Peru,19.0,April
+Sierra Leone,24.0,April
+Vatican City,14.0,April
+Slovakia,24.0,April
+Tanzania,13.0,April
+Gabon,15.0,April
+Belize,14.0,April
+France,32.0,April
+Kuwait,13.0,April
+Burundi,26.0,April
+Belarus,28.0,April
+Panama,38.0,April
+Finland,105.0,April
+Yemen,10.0,May
+Australia,27.0,May
+Australia,9.0,May
+Maldives,26.0,May
+Gambia,10.0,May
+Paraguay,9.0,May
+Congo,32.0,May
+Tunisia,16.0,May
+Togo,12.0,May
+Qatar,31.0,May
+Czech Republic,19.0,May
+Madagascar,22.0,May
+Kuwait,22.0,May
+Slovenia,26.0,May
+Saudi Arabia,19.0,May
+Yemen,17.0,May
+Argentina,10.0,May
+Tunisia,27.0,May
+Monaco,10.0,May
+Slovakia,8.0,May
+Sierra Leone,34.0,May
+El Salvador,19.0,May
+Argentina,11.0,May
+Russia,32.0,May
+Peru,26.0,May
+Guyana,19.0,May
+Kosovo,28.0,May
+Papua New Guinea,22.0,May
+New Zealand,11.0,May
+Austria,14.0,May
+Qatar,27.0,May
+Finland,153.0,May
