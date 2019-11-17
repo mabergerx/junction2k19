@@ -29,6 +29,7 @@ export const Card = styled.article`
       display: flex;
       align-items: flex-end;
       padding: 10px;
+      position: relative;
       &:before {
         content: "";
         background: rgba(0, 0, 0, 0.15);
@@ -312,4 +313,39 @@ export const FlatButton = styled.button`
   font-weight: bold;
 `;
 
-export const ToDoListItem = styled.div``;
+export const ToDoList = styled.div`
+  header {
+    color: white;
+    font-weight: bold;
+    font-family: avenirblack, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0px;
+  }
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+  }
+`;
+
+export const ToDoListItem = styled.div`
+  width: 75px;
+  height: 75px;
+  margin: 5px;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: ${props => `url(images/${props.image})`};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  &:last-of-type {
+    border: 2px dotted white;
+  }
+`;

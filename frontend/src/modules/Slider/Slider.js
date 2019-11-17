@@ -34,7 +34,7 @@ const StyledSlider = styled(Slider)`
   .slick-prev {
     left: 25px;
     transform: translate(0, -50%) rotate(90deg);
-
+    z-index: 1;
     svg {
       fill: white;
     }
@@ -88,8 +88,6 @@ const StyledHeader = styled.header`
   font-size: 20px;
   text-align: center;
   margin: 20px 0px;
-  display: ${props => (props.open ? "none" : "block")};
-  transition: 0.2 ease-in-out linear;
 `;
 
 const ArrowContainer = styled.section``;

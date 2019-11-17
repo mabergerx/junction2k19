@@ -24,7 +24,7 @@ import InfoPage from "../InfoPage/InfoPage";
 import AccountPage from "../Account/Account";
 
 export default ({ onClick }) => {
-  const [selected, setSelected] = useState("Explore");
+  const [selected, setSelected] = useState("Plan");
   const [state, setState] = useState({
     card: {},
     open: false

@@ -5,17 +5,37 @@ import Slider from "../Slider/Slider";
 import hikingTrails from "../../assets/data/hiking_trails.json";
 import Hike from "../Icons/Hike";
 import Bike from "../Icons/Bike";
+import POI from "../Icons/POI";
 import {
   SmallCard,
   CardWrapper,
   Container,
   Button,
-  FlatButton
+  FlatButton,
+  ToDoList,
+  ToDoListItem
 } from "../Dashboard/DashboardComponents";
 
 const PlanWrapper = styled.div`
   .map {
     height: 250px;
+  }
+
+  .plus_button {
+    margin-left: auto;
+    z-index: 3393393992393;
+    .plus {
+      border: none;
+      background-color: white;
+      color: #f77064;
+      font-weight: bold;
+      font-size: 40px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      outline: none;
+      box-shadow: none;
+    }
   }
 `;
 
@@ -31,7 +51,9 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
     relax: false,
     adventure: false
   });
+  const [list, setList] = useState([]);
 
+  console.log(list);
   return (
     <PlanWrapper {...restProps}>
       {!hasSuggestions ? (
@@ -39,10 +61,7 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
           <Map className="map" />
           <Slider header={"Recommended activities"}>
             {hikingTrails.map((trail, key) => (
-              <CardWrapper
-                key={key}
-                // onClick={() => setState({ card: trail, open: true })}
-              >
+              <CardWrapper key={key}>
                 <SmallCard image={trail.image}>
                   <div className="card__image">
                     <div className="card__content">
@@ -63,13 +82,31 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
                       {trail.trail_name === "takala" && (
                         <Bike width={20} height={20} />
                       )}
-                      <div>{/* 4<Star /> */}</div>
+                    </div>
+                    <div className="plus_button">
+                      <button
+                        onClick={() => setList([...list, trail])}
+                        className="plus"
+                      >
+                        +
+                      </button>
                     </div>
                   </div>
                 </SmallCard>
               </CardWrapper>
             ))}
           </Slider>
+          <ToDoList>
+            <header>To-do list</header>
+            <article>
+              {list.map((elem, key) => (
+                <ToDoListItem key={key} element={elem} image={elem.image}>
+                  {elem.trail ? <Hike /> : <POI />}
+                </ToDoListItem>
+              ))}
+              <ToDoListItem>+</ToDoListItem>
+            </article>
+          </ToDoList>
         </>
       ) : (
         <Container>
