@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Image from "../../assets/sample.jpeg";
-import logo from "../../assets/sample.jpeg";
+import logo from "../../assets/logo.png";
 import Park from "../Icons/Park";
 import Arrow from "../Icons/Arrow";
 import Close from "../Icons/Close";
@@ -34,7 +34,7 @@ const Profile = styled.div`
 
 const LogoContainer = styled.div`
   flex: 1 0 auto;
-  padding: 10px;
+  padding: 5px;
 `;
 
 const Logo = styled.div`
