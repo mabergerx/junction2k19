@@ -36,10 +36,19 @@ export default ({ onClick }) => {
   });
   const [notification, setNotification] = useState(false);
   const [list, setList] = useState([]);
+  const [firstSearch, setFirstSearch] = useState(false);
+  const [filterOpen, setFilterOpen] = useState(true);
 
   const myCallback = dataFromChild => {
-    console.log(dataFromChild);
     setList(dataFromChild);
+  };
+
+  const searchCallback = dataFromChild => {
+    setFirstSearch(dataFromChild);
+  };
+
+  const filterCallback = dataFromChild => {
+    setFilterOpen(dataFromChild);
   };
 
   const handleOnClickPlan = () => {
@@ -56,7 +65,13 @@ export default ({ onClick }) => {
             <Slider header={"Trails"}>
               {hikingTrails.map((trail, key) => (
                 <CardWrapper key={key}>
-                  <Card image={trail.image}>
+                  <Card
+                    image={
+                      trail.image
+                        ? `images/${trail.image}`
+                        : trail.flickr_picture_urls[0]
+                    }
+                  >
                     <div className="card__image">
                       <div className="card__content">
                         <h1>{trail.trail_name}</h1>
@@ -79,6 +94,10 @@ export default ({ onClick }) => {
         ) : selected === "Plan" ? (
           <Plan
             prevList={list}
+            firstSearch={firstSearch}
+            setFirstSearch={searchCallback}
+            filterOpen={filterOpen}
+            setFilterOpen={filterCallback}
             callbackFromParent={myCallback}
             selectedInterestIDs={
               [

@@ -49,6 +49,10 @@ export default ({
   hasSuggestions,
   callbackFromParent,
   prevList,
+  setFirstSearch,
+  firstSearch,
+  filterOpen,
+  setFilterOpen,
   ...restProps
 }) => {
   const [state, setState] = useState({
@@ -76,7 +80,6 @@ export default ({
     open: false,
     card: {}
   });
-  const [filterOpen, setFilterOpen] = useState(true);
   const [map, setMap] = useState(true);
 
   const enabledFilters = () => {
@@ -142,6 +145,7 @@ export default ({
 
     setNuuksio(filteredNuuksio);
     setFilterOpen(false);
+    setFirstSearch(true);
   };
 
   useEffect(() => {
@@ -168,16 +172,22 @@ export default ({
   return (
     <div style={{ maxHeight: "calc(100vh - 140px)", overflow: "auto" }}>
       <PlanWrapper {...restProps}>
-        {!filterOpen ? (
+        {!filterOpen && firstSearch ? (
           <>
             <Map className="map" mapRefPass={mapRefPass} />
             <Slider header={"Recommended activities"}>
               {nuuksio.map((trail, key) => (
                 <CardWrapper key={key}>
-                  <SmallCard image={trail.image}>
+                  <SmallCard
+                    image={
+                      trail.image
+                        ? `images/${trail.image}`
+                        : trail.flickr_picture_urls[0]
+                    }
+                  >
                     <div className="card__image">
                       <div className="card__content">
-                        <h1>{trail.trail_name}</h1>
+                        <h1>{trail.trail_name || trail.name}</h1>
                         <button
                           onClick={() => setState({ card: trail, open: true })}
                         >
@@ -192,7 +202,7 @@ export default ({
                         </button>
                       </div>
                       <div className="card__tags">
-                        <Hike width={20} height={20} />
+                        {trail.trail_name && <Hike width={20} height={20} />}
                         {trail.trail_name === "takala" && (
                           <Bike width={20} height={20} />
                         )}
@@ -214,18 +224,20 @@ export default ({
               <header>To-do list</header>
               <article>
                 {list.length > 0 &&
-                  list.map((elem, key) => {
-                    return (
-                      <ToDoListItem
-                        key={key}
-                        element={elem}
-                        image={elem.image}
-                        onClick={() => handleListItemClick(elem)}
-                      >
-                        {elem.trail ? <Hike /> : <POI />}
-                      </ToDoListItem>
-                    );
-                  })}
+                  list.map((elem, key) => (
+                    <ToDoListItem
+                      key={key}
+                      element={elem}
+                      image={
+                        elem.image
+                          ? `images/${elem.image}`
+                          : elem.flickr_picture_urls[0]
+                      }
+                      onClick={() => handleListItemClick(elem)}
+                    >
+                      {elem.image ? <Hike /> : <POI />}
+                    </ToDoListItem>
+                  ))}
                 <ToDoListItem>+</ToDoListItem>
               </article>
             </ToDoList>
