@@ -231,7 +231,7 @@
       "breakwater",
       "totem_pole"
     ],
-    "categories": ["cultural_buildings", "lodging", "food", "health_fitness"]
+    "categories": ["lodging", "food", "health_fitness"]
   },
   {
     "id": "ChIJ0Z6CTDnujUYRMsF-93zIUp8",
@@ -440,7 +440,7 @@
       "window_shade",
       "marimba"
     ],
-    "categories": ["lodging", "food", "cultural_buildings"]
+    "categories": ["lodging", "food"]
   },
   {
     "id": "ChIJ2b0JcFPujUYREeKzKbTk7OI",
