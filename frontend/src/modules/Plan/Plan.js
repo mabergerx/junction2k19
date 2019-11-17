@@ -30,9 +30,9 @@ const PlanWrapper = styled.div`
       background-color: white;
       color: #f77064;
       font-weight: bold;
-      font-size: 40px;
-      height: 45px;
-      width: 45px;
+      font-size: 30px;
+      height: 35px;
+      width: 35px;
       border-radius: 50%;
       outline: none;
       box-shadow: none;
@@ -64,11 +64,10 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
     card: {}
   });
 
-  console.log(list);
   return (
-    <>
+    <div style={{ maxHeight: "calc(100vh - 140px)" }}>
       <PlanWrapper {...restProps}>
-        {hasSuggestions ? (
+        {!hasSuggestions ? (
           <>
             <Map className="map" />
             <Slider header={"Recommended activities"}>
@@ -300,6 +299,6 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
           onClick={() => setState({ card: {}, open: false })}
         />
       )}
-    </>
+    </div>
   );
 };
