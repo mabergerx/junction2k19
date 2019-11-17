@@ -22,6 +22,7 @@ import { SliderItem } from "./DashboardComponents";
 import Plan from "../Plan/Plan";
 import InfoPage from "../InfoPage/InfoPage";
 import AccountPage from "../Account/Account";
+import { Circle } from "./DashboardComponents";
 
 const hikingTrails = nuuksioTrails.filter(item =>
   item.categories.includes("hike")
@@ -33,6 +34,18 @@ export default ({ onClick }) => {
     card: {},
     open: false
   });
+  const [notification, setNotification] = useState(false);
+  const [list, setList] = useState([]);
+
+  const myCallback = dataFromChild => {
+    console.log(dataFromChild);
+    setList(dataFromChild);
+  };
+
+  const handleOnClickPlan = () => {
+    setNotification(false);
+    setSelected("Plan");
+  };
 
   return (
     <div>
@@ -65,6 +78,8 @@ export default ({ onClick }) => {
           </>
         ) : selected === "Plan" ? (
           <Plan
+            prevList={list}
+            callbackFromParent={myCallback}
             selectedInterestIDs={
               [
                 /* TODO: Add interests somewhere. */
@@ -76,8 +91,11 @@ export default ({ onClick }) => {
         )}
         {state.open && (
           <InfoPage
+            fromExplore
             card={state.card}
+            handleOnClick={() => setList([...list, state.card])}
             onClick={() => setState({ card: {}, open: false })}
+            sendNotification={() => setNotification(true)}
           />
         )}
       </DashboardWrapper>
@@ -87,8 +105,9 @@ export default ({ onClick }) => {
             <Item
               selected={selected === "Plan"}
               color={"#ec5d86"}
-              onClick={() => setSelected("Plan")}
+              onClick={() => handleOnClickPlan()}
             >
+              {notification && selected !== "Plan" && <Circle>1</Circle>}
               <Map color={selected === "Plan" ? "#ec5d86" : "#999"} />
               <span>Plan</span>
             </Item>

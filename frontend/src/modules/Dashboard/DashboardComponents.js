@@ -130,16 +130,18 @@ export const Navigation = styled.ul`
 
 export const Circle = styled.article`
   position: absolute;
-  top: -15px;
-  right: 5px;
+  top: 5px;
+  left: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: ${props => props.theme.primary.main};
+  background: #49ccfd;
   z-index: 111;
+  color: white;
+  font-weight: bold;
   font-size: 12px;
 `;
 

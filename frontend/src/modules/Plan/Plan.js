@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Map from "../Map/Map";
 import Slider from "../Slider/Slider";
@@ -44,7 +44,13 @@ const PlanWrapper = styled.div`
   }
 `;
 
-export default ({ onClick, hasSuggestions, ...restProps }) => {
+export default ({
+  onClick,
+  hasSuggestions,
+  callbackFromParent,
+  prevList,
+  ...restProps
+}) => {
   const [state, setState] = useState({
     hike: false,
     bike: false,
@@ -63,7 +69,9 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
     outdoor_activity: false
   });
   const [nuuksio, setNuuksio] = useState(nuuksioTrails);
-  const [list, setList] = useState([]);
+  const [list, setList] = useState(
+    prevList && prevList.length > 0 ? prevList : []
+  );
   const [open, setOpen] = useState({
     open: false,
     card: {}
@@ -135,6 +143,15 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
     setFilterOpen(false);
   };
 
+  useEffect(() => {
+    callbackFromParent(list);
+  });
+
+  const handleListUpdate = trail => {
+    setList([...list, trail]);
+    callbackFromParent(list);
+  };
+
   return (
     <div style={{ maxHeight: "calc(100vh - 140px)", overflow: "auto" }}>
       <PlanWrapper {...restProps}>
@@ -167,7 +184,7 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
                       </div>
                       <div className="plus_button">
                         <button
-                          onClick={() => setList([...list, trail])}
+                          onClick={() => handleListUpdate(trail)}
                           className="plus"
                         >
                           +
@@ -181,11 +198,12 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
             <ToDoList>
               <header>To-do list</header>
               <article>
-                {list.map((elem, key) => (
-                  <ToDoListItem key={key} element={elem} image={elem.image}>
-                    {elem.trail ? <Hike /> : <POI />}
-                  </ToDoListItem>
-                ))}
+                {list.length > 0 &&
+                  list.map((elem, key) => (
+                    <ToDoListItem key={key} element={elem} image={elem.image}>
+                      {elem.trail ? <Hike /> : <POI />}
+                    </ToDoListItem>
+                  ))}
                 <ToDoListItem>+</ToDoListItem>
               </article>
             </ToDoList>
