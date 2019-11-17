@@ -34,7 +34,6 @@ const StyledSlider = styled(Slider)`
   .slick-prev {
     left: 25px;
     transform: translate(0, -50%) rotate(90deg);
-    z-index: 1;
 
     svg {
       fill: white;
@@ -47,7 +46,6 @@ const StyledSlider = styled(Slider)`
 
   .slick-next {
     right: 25px;
-    z-index: 1;
     transform: translate(0, -50%) rotate(-90deg);
 
     svg {
