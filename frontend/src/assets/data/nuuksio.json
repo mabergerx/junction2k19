@@ -1,207 +1,89 @@
 [
   {
-    "id": "ChIJ4Us9pPryjUYRn1MzXbSQuPA",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": "Nothing",
-      "reviews": "Nothing",
-      "amount_ratings": "Nothing",
-      "website": "http://www.espoo.fi/"
-    },
-    "google_types": ["locality", "political"],
-    "name": "Espoo",
-    "location": { "lat": 60.2054911, "lon": 24.6559 },
-    "flickr_tags": [
-      "uusimaa",
-      "lake",
-      "espoontori",
-      "huuhkaja",
-      "abandoned",
-      "helsingin",
-      "2018",
-      "texture",
-      "espoonkeskus",
-      "j\u00e4\u00e4",
-      "ice",
-      "building",
-      "landscape",
-      "finland",
-      "day",
-      "pitk\u00e4j\u00e4rvi",
-      "orange",
-      "samsung",
-      "room",
-      "light",
-      "suomi",
-      "old",
-      "entresse",
-      "doorway",
-      "oven",
-      "house",
-      "espoo",
-      "bubobubo",
-      "red",
-      "talvi",
-      "hvk",
-      "hugovk",
-      "winter",
-      "december",
-      "autumn",
-      "window",
-      "espoodecember2018",
-      "j\u00e4rvi",
-      "apartment"
-    ],
-    "flickr_picture_urls": [
-      "https://live.staticflickr.com/65535/40702342013_ed0012cb18.jpg",
-      "https://live.staticflickr.com/65535/32672953727_c8f7679df6.jpg",
-      "https://live.staticflickr.com/7899/32197615577_de5aa27db2.jpg",
-      "https://live.staticflickr.com/7925/32190568567_b287e57300.jpg",
-      "https://live.staticflickr.com/7911/45746385564_4d1ed0c15a.jpg",
-      "https://live.staticflickr.com/7835/46469855751_a9f62d60b0.jpg",
-      "https://live.staticflickr.com/4910/46279312862_b9874dc1c4.jpg",
-      "https://live.staticflickr.com/4881/45223131095_9523f2ffa8.jpg",
-      "https://live.staticflickr.com/4840/31195331727_fc26ee87ea.jpg",
-      "https://live.staticflickr.com/4814/31195317817_716005fe8e.jpg",
-      "https://live.staticflickr.com/65535/49074353248_443fcb80b9.jpg",
-      "https://live.staticflickr.com/65535/49072870238_361e8b839c.jpg",
-      "https://live.staticflickr.com/65535/49073422592_eac706d418.jpg",
-      "https://live.staticflickr.com/65535/49072667287_07439ac551.jpg",
-      "https://live.staticflickr.com/65535/49072453401_43c1ec902d.jpg",
-      "https://live.staticflickr.com/65535/49069069442_2976684157.jpg",
-      "https://live.staticflickr.com/65535/49068860761_abdeb4b602.jpg",
-      "https://live.staticflickr.com/65535/49069067187_9e69970c6e.jpg",
-      "https://live.staticflickr.com/65535/49068337478_c9970d7b62.jpg",
-      "https://live.staticflickr.com/65535/49068336943_e831c49de9.jpg"
-    ],
-    "flickr_objects_ml": [
-      "flagpole",
-      "chainlink_fence",
-      "shoji",
-      "rock_crab",
-      "dome",
-      "prison",
-      "safe",
-      "mobile_home",
-      "birdhouse",
-      "freight_car",
-      "monastery",
-      "wall_clock",
-      "cleaver",
-      "passenger_car",
-      "beacon",
-      "barrel",
-      "window_screen",
-      "paddle",
-      "fire_screen",
-      "lakeside",
-      "canoe",
-      "breakwater",
-      "hen-of-the-woods",
-      "African_hunting_dog",
-      "mosque",
-      "gyromitra",
-      "hip",
-      "brambling",
-      "gas_pump",
-      "envelope",
-      "stove",
-      "planetarium",
-      "house_finch",
-      "church",
-      "barn",
-      "vulture",
-      "water_tower",
-      "mosquito_net",
-      "altar",
-      "bald_eagle",
-      "bell_cote",
-      "red-backed_sandpiper",
-      "refrigerator",
-      "great_grey_owl",
-      "butcher_shop",
-      "worm_fence",
-      "mailbox",
-      "tub",
-      "streetcar",
-      "robin",
-      "hyena",
-      "kite",
-      "sliding_door",
-      "rocking_chair",
-      "fur_coat",
-      "bathtub",
-      "redshank",
-      "junco",
-      "binder",
-      "dock",
-      "book_jacket",
-      "muzzle",
-      "vault",
-      "park_bench",
-      "hummingbird",
-      "paintbrush",
-      "mushroom",
-      "upright",
-      "studio_couch",
-      "coral_fungus",
-      "crane",
-      "radiator",
-      "dowitcher",
-      "comic_book",
-      "whippet",
-      "restaurant",
-      "boathouse",
-      "rain_barrel",
-      "swab",
-      "banded_gecko",
-      "earthstar",
-      "dining_table"
-    ]
-  },
-  {
     "id": "ChIJOSsORHnujUYR_XPCpc-uGU4",
     "place_details": {
       "opening_times": {
         "open_now": false,
         "periods": [
           {
-            "close": { "day": 0, "time": "1200" },
-            "open": { "day": 0, "time": "0800" }
+            "close": {
+              "day": 0,
+              "time": "1200"
+            },
+            "open": {
+              "day": 0,
+              "time": "0800"
+            }
           },
           {
-            "close": { "day": 1, "time": "2200" },
-            "open": { "day": 1, "time": "0800" }
+            "close": {
+              "day": 1,
+              "time": "2200"
+            },
+            "open": {
+              "day": 1,
+              "time": "0800"
+            }
           },
           {
-            "close": { "day": 2, "time": "2200" },
-            "open": { "day": 2, "time": "0800" }
+            "close": {
+              "day": 2,
+              "time": "2200"
+            },
+            "open": {
+              "day": 2,
+              "time": "0800"
+            }
           },
           {
-            "close": { "day": 3, "time": "2200" },
-            "open": { "day": 3, "time": "0800" }
+            "close": {
+              "day": 3,
+              "time": "2200"
+            },
+            "open": {
+              "day": 3,
+              "time": "0800"
+            }
           },
           {
-            "close": { "day": 4, "time": "2200" },
-            "open": { "day": 4, "time": "0800" }
+            "close": {
+              "day": 4,
+              "time": "2200"
+            },
+            "open": {
+              "day": 4,
+              "time": "0800"
+            }
           },
           {
-            "close": { "day": 5, "time": "2200" },
-            "open": { "day": 5, "time": "0800" }
+            "close": {
+              "day": 5,
+              "time": "2200"
+            },
+            "open": {
+              "day": 5,
+              "time": "0800"
+            }
           },
           {
-            "close": { "day": 6, "time": "2200" },
-            "open": { "day": 6, "time": "0800" }
+            "close": {
+              "day": 6,
+              "time": "2200"
+            },
+            "open": {
+              "day": 6,
+              "time": "0800"
+            }
           }
         ],
         "weekday_text": [
-          "Monday: 8:00 AM \u2013 10:00 PM",
-          "Tuesday: 8:00 AM \u2013 10:00 PM",
-          "Wednesday: 8:00 AM \u2013 10:00 PM",
-          "Thursday: 8:00 AM \u2013 10:00 PM",
-          "Friday: 8:00 AM \u2013 10:00 PM",
-          "Saturday: 8:00 AM \u2013 10:00 PM",
-          "Sunday: 8:00 AM \u2013 12:00 PM"
+          "Monday: 8:00 AM – 10:00 PM",
+          "Tuesday: 8:00 AM – 10:00 PM",
+          "Wednesday: 8:00 AM – 10:00 PM",
+          "Thursday: 8:00 AM – 10:00 PM",
+          "Friday: 8:00 AM – 10:00 PM",
+          "Saturday: 8:00 AM – 10:00 PM",
+          "Sunday: 8:00 AM – 12:00 PM"
         ]
       },
       "photo_refs": [
@@ -284,7 +166,10 @@
       "establishment"
     ],
     "name": "Hotelli Nuuksio",
-    "location": { "lat": 60.27881929999999, "lon": 24.50009 },
+    "location": {
+      "lat": 60.27881929999999,
+      "lon": 24.50009
+    },
     "flickr_tags": [
       "uusimaa",
       "finland",
@@ -345,7 +230,8 @@
       "canoe",
       "breakwater",
       "totem_pole"
-    ]
+    ],
+    "categories": ["lodging", "food", "health_fitness"]
   },
   {
     "id": "ChIJ0Z6CTDnujUYRMsF-93zIUp8",
@@ -380,14 +266,17 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "Solvalla Sports Institute",
-    "location": { "lat": 60.2937114, "lon": 24.5572788 },
+    "location": {
+      "lat": 60.2937114,
+      "lon": 24.5572788
+    },
     "flickr_tags": [
       "landscape",
       "uusimaa",
       "finland",
       "monochrome",
       "analogcamera",
-      "pitk\u00e4j\u00e4rvi",
+      "pitkäjärvi",
       "lake",
       "race",
       "obstacle",
@@ -452,7 +341,8 @@
       "canoe",
       "ashcan",
       "stole"
-    ]
+    ],
+    "categories": ["health_fitness", "waterside"]
   },
   {
     "id": "ChIJMzVPxdztjUYRnUqaDHDhfX0",
@@ -503,7 +393,7 @@
           "time": 1552380678
         },
         {
-          "author_name": "Krzysztof Moro\u0144ski",
+          "author_name": "Krzysztof Moroński",
           "author_url": "https://www.google.com/maps/contrib/110959260925423995192/reviews",
           "language": "en",
           "profile_photo_url": "https://lh6.googleusercontent.com/-zRJILe0EnXI/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rfxZUCAXNkJY0psxaYQTpn131FItQ/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
@@ -528,7 +418,10 @@
     },
     "google_types": ["lodging", "point_of_interest", "establishment"],
     "name": "Hotel Lepolampi",
-    "location": { "lat": 60.2604953, "lon": 24.5061496 },
+    "location": {
+      "lat": 60.2604953,
+      "lon": 24.5061496
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [
       "https://live.staticflickr.com/5701/30856795036_c3f07e6e0a.jpg"
@@ -539,193 +432,8 @@
       "barbershop",
       "window_shade",
       "marimba"
-    ]
-  },
-  {
-    "id": "ChIJiYTHxzfujUYRo-WeSsq73RY",
-    "place_details": {
-      "opening_times": {
-        "open_now": true,
-        "periods": [{ "open": { "day": 0, "time": "0000" } }],
-        "weekday_text": [
-          "Monday: Open 24 hours",
-          "Tuesday: Open 24 hours",
-          "Wednesday: Open 24 hours",
-          "Thursday: Open 24 hours",
-          "Friday: Open 24 hours",
-          "Saturday: Open 24 hours",
-          "Sunday: Open 24 hours"
-        ]
-      },
-      "photo_refs": [
-        "CmRaAAAATfVZHB3_6-Ig0Ju8f-kQWoEiIWyBwvMSRyNhZQjV82Os0Rkc2Z1R0YtaNYsjLO0C51kjK8OOJJmVBYeGePf6A64rq0pPiRXJfNxWiKNAkZ9SMLxp5OK2WYwB2KJn_gG0EhDE_AbHF1XhBCvHOiGxpc5cGhScdX6zGTrqLW3lYL8T_NshAByKQQ",
-        "CmRZAAAA5WHFTCoPlIBqQROTfflZelZlrKqLCFPf7zIqlRoe8FOOz-N21n5UFZ-0Lh98kA6lu7xWmbEJWiqnnNZjZCkIcE8kp8jJs7eJF4ixNj55nNQl87_dirboGp0p6rbi6vAgEhBUJbGKdcvk_imp8mxjKkx4GhTJ4iPP2snZ4izuOigK4iG1qGKfHg",
-        "CmRaAAAAqlBuS6d9acph4NFct3MvN0Isl-zJvP_wycy-lFPW1dPXSVvVeZ2gnzNZXJzNyZ58VAiqEin_oT7YReYcv8fMB9cwf5gEmb_fpK5aYH67Kv-9DH49v2x79LKIf5VVld13EhBirfQGp0pbWyXfppdU1nwIGhQAvY96ZIjpAjWu0F6-KK-iqcdYSg",
-        "CmRaAAAAlSdsEBZWSzFzUVC04Gie_RF6wJHDLAZXISBIqkqq24NR12R2_bWdFOWRrupYLpj_GYHN1qkrws7ViEkGxiWBoHqzRcVjttEzvzCoqdhVeYqorS1h34OgC9mFmvJphj-AEhCC6utK0QVrT0oL_p0RjXVHGhSyC3yOFDMH1eqODxLIb1uB6GLNNw",
-        "CmRaAAAA6hIVYtuBXyFScbKVkjfhHLHCmkbWHQDEWqjYOFNWFKC9oORFfUp3KsIM2uwfdVIyvvl-hWhqZWRWTtBoKHDW4BqG5XJJyPP6qY0Mytk4DoYEuwxuQulEgMcTAiFjz4E2EhAa-Dn3jZDMUS4dB5pb34UJGhQWPQDbyi0Xx2tM1x3nt3NAekiHfQ",
-        "CmRaAAAAbiqSSMRFrvj_J5EiCS3c1eidIfiPQVkej-rDS0v7EGN4P-Rtp_lwxabCyRLl-RHYBcTuRLQKWodbSUApW3o0h1-Lh1z1XoI1pEDtmSEsP0_QpwD8AgXMnUr67VY9YzHXEhCbmrWJzHOrV00kbf9GvbxbGhTtl6TZjPE3ypObIfY7Yr2KnWBt_A",
-        "CmRaAAAAx7IDENn1d_F8csqqGyV5eInyJqGYaainSX9ygCU4XEFapSM8tD85Y5CDMYK3I2UiNO8EH2LgvV13yXQdv6ijoZKfU5b9fVBfxtAXzXuzMEhEi6S48gfAaLcs3ZI17TPhEhDs1axuFFceVKbVOGFObRvTGhQe4FxWmfEtZ4in_T8rQYI1uUj0dQ",
-        "CmRaAAAACoRReVvtlp0OcLCKij0h0WtKP_E91aa8X0Cr5xBjsEm9si-J5-zbPSCfTr13Re4wyjhjvHaJu2r0VSshthBSWfiXHEb1yA55Nu9GD9RHEGLwORZdowknF6RpUZ4D3oa9EhBvciIshscCEax9hS8lczNGGhS1wnnhXr1ofQlxy1ECGP6oi4AHXQ",
-        "CmRaAAAAi2fFF2k0YWhQZ94GNq-t-vN6aZj6qfm5BLMYxDrKoV3mRX62WV6YgCi4Hdbq7zIrbywJSkd699ad2VEL60Qj5cAeDA3pJFoXtErcLmJ-foG1ZANdv6m9Ld8AkeMnOT4kEhCkSeOU9YRZ3lmNpsjzEYWTGhQn61ZE2-1T2ONThYfKOvfp-Exc4Q",
-        "CmRaAAAA_05lkaJFutkXozsZd4GlOm19aekaekwsep2jyIoi5nNDWR33qz5l648x2tFCEFnrwVveRtKSltOyoDvuZOs-L8MzjGLgqkLuXVoSeicPVTjULglmIJP5--8EVbKBAjyWEhCRVqH-eCGEb6XSv4ppdsmcGhQWO96iZPg0YHAneIDNXYZedhtt-Q"
-      ],
-      "rating": 4.7,
-      "reviews": [
-        {
-          "author_name": "Markus Sauvola",
-          "author_url": "https://www.google.com/maps/contrib/116837682522322031707/reviews",
-          "language": "en",
-          "profile_photo_url": "https://lh6.ggpht.com/-53wcqQWufx4/AAAAAAAAAAI/AAAAAAAAAAA/rzbw7_2RyzE/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
-          "rating": 5,
-          "relative_time_description": "in the last week",
-          "text": "A great getaway place near Helsinki. Easy to reach by public transportation or by car. Paths to everybody and some paths accessible by everyone. Beautiful nature \u2665\ufe0f",
-          "time": 1573338892
-        },
-        {
-          "author_name": "Carola Sand",
-          "author_url": "https://www.google.com/maps/contrib/107823025967981572509/reviews",
-          "language": "en",
-          "profile_photo_url": "https://lh4.ggpht.com/-_15rkJvI_-w/AAAAAAAAAAI/AAAAAAAAAAA/-8Vf1aXPXfs/s128-c0x00000000-cc-rp-mo/photo.jpg",
-          "rating": 5,
-          "relative_time_description": "a month ago",
-          "text": "Beautiful nature just outside the City center of Helsinki. Many great hiking paths with nice BBQ areas. Beautiful small lakes and hilly terrain. Suitable also for families. Don't miss the Visitor Center with great exhibitions and a restaurant.",
-          "time": 1570901092
-        },
-        {
-          "author_name": "Das Uenuen",
-          "author_url": "https://www.google.com/maps/contrib/100225813480465139515/reviews",
-          "language": "en",
-          "profile_photo_url": "https://lh4.ggpht.com/-iV3ZLfH4HV8/AAAAAAAAAAI/AAAAAAAAAAA/GZyv9CsXAi8/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
-          "rating": 5,
-          "relative_time_description": "in the last week",
-          "text": "Beautiful National Park with lots of different trails for beginners and advanced hikers. There is parking, bathrooms, picnick spots and a cafe at one spot. I definitely recommend coming here to enjoy nature.",
-          "time": 1573640509
-        },
-        {
-          "author_name": "Jan Van den broeke",
-          "author_url": "https://www.google.com/maps/contrib/107662840216071269767/reviews",
-          "language": "en",
-          "profile_photo_url": "https://lh6.ggpht.com/-Ydeu8izp2tY/AAAAAAAAAAI/AAAAAAAAAAA/QPAmzQjOk8M/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
-          "rating": 5,
-          "relative_time_description": "2 weeks ago",
-          "text": "Great place to spend a day hiking. This national park has several places to have a laavu, an open fire to grill your sausages and have a beer. Lakes around the park are beautiful. The park itself has several trails ranging from easy to challenging. Definitely worth a try if you're an outdoor person.",
-          "time": 1572384327
-        },
-        {
-          "author_name": "situkwokhan .",
-          "author_url": "https://www.google.com/maps/contrib/109808132505039959478/reviews",
-          "language": "en",
-          "profile_photo_url": "https://lh4.ggpht.com/-aclYVqFakRk/AAAAAAAAAAI/AAAAAAAAAAA/uqqw6VgjkQA/s128-c0x00000000-cc-rp-mo/photo.jpg",
-          "rating": 5,
-          "relative_time_description": "2 months ago",
-          "text": "This is such a beautiful national park. So well maintained and the trails are really marked out with detail. Felt so safe hiking here. The people here are super helpful.",
-          "time": 1567687625
-        }
-      ],
-      "amount_ratings": 3793,
-      "website": "https://www.luontoon.fi/nuuksio"
-    },
-    "google_types": [
-      "tourist_attraction",
-      "park",
-      "point_of_interest",
-      "establishment"
     ],
-    "name": "Nuuksio National Park",
-    "location": { "lat": 60.31275249999999, "lon": 24.4809016 },
-    "flickr_tags": [
-      "uusimaa",
-      "finland",
-      "nuuksio",
-      "pentax",
-      "vihti",
-      "nuuksionationalpark",
-      "fi",
-      "noux"
-    ],
-    "flickr_picture_urls": [
-      "https://live.staticflickr.com/7823/32363432957_ce751c9af0.jpg",
-      "https://live.staticflickr.com/7912/47305176531_7f5522a257.jpg",
-      "https://live.staticflickr.com/7838/33429413518_f36582985e.jpg",
-      "https://live.staticflickr.com/7826/47252700012_2786162455.jpg",
-      "https://live.staticflickr.com/7837/46390230285_8f40de6ca6.jpg",
-      "https://live.staticflickr.com/7865/33429407538_5ac559d908.jpg",
-      "https://live.staticflickr.com/7814/46390228395_c9cccc1c52.jpg",
-      "https://live.staticflickr.com/7926/40340332733_7e8ba8d693.jpg",
-      "https://live.staticflickr.com/7868/40340331253_c653fcf624.jpg",
-      "https://live.staticflickr.com/7850/46581866904_6430043bae.jpg",
-      "https://live.staticflickr.com/65535/49032447198_0be5c4f8a0.jpg",
-      "https://live.staticflickr.com/65535/48919422697_4de84d221f.jpg",
-      "https://live.staticflickr.com/65535/48907354141_30bd14b403.jpg",
-      "https://live.staticflickr.com/65535/48907353711_ea5e74a4e9.jpg",
-      "https://live.staticflickr.com/65535/48907353431_79cb4eac5d.jpg",
-      "https://live.staticflickr.com/65535/48906823683_287dcd1747.jpg",
-      "https://live.staticflickr.com/65535/48906823208_a00504e4e5.jpg",
-      "https://live.staticflickr.com/65535/48907352256_bb77c32792.jpg",
-      "https://live.staticflickr.com/65535/48907554132_6d480f16a6.jpg",
-      "https://live.staticflickr.com/65535/48906821293_03b1b7656d.jpg"
-    ],
-    "flickr_objects_ml": [
-      "ptarmigan",
-      "Labrador_retriever",
-      "hip",
-      "worm_fence",
-      "hognose_snake",
-      "volcano",
-      "safety_pin",
-      "monarch",
-      "gondola",
-      "chainlink_fence",
-      "mongoose",
-      "wallaby",
-      "park_bench",
-      "stone_wall",
-      "mountain_tent",
-      "daisy",
-      "assault_rifle",
-      "Chesapeake_Bay_retriever",
-      "sulphur_butterfly",
-      "prairie_chicken",
-      "partridge",
-      "ringneck_snake",
-      "bighorn",
-      "barn",
-      "Leonberg",
-      "cheetah",
-      "ant",
-      "dung_beetle",
-      "racket",
-      "grasshopper",
-      "Gordon_setter",
-      "cabbage_butterfly",
-      "baboon",
-      "hay",
-      "ruffed_grouse",
-      "mountain_bike",
-      "stinkhorn",
-      "tripod",
-      "ear",
-      "rapeseed",
-      "marmot",
-      "Rhodesian_ridgeback",
-      "slug",
-      "dock",
-      "valley",
-      "boathouse",
-      "bison",
-      "swing",
-      "thunder_snake",
-      "alp",
-      "dogsled",
-      "fountain",
-      "lakeside",
-      "geyser",
-      "canoe",
-      "breakwater",
-      "rifle",
-      "syringe",
-      "megalith"
-    ]
+    "categories": ["lodging", "food"]
   },
   {
     "id": "ChIJ2b0JcFPujUYREeKzKbTk7OI",
@@ -738,10 +446,14 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "A. Junno Oy",
-    "location": { "lat": 60.3131828, "lon": 24.5379624 },
+    "location": {
+      "lat": 60.3131828,
+      "lon": 24.5379624
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [],
-    "flickr_objects_ml": []
+    "flickr_objects_ml": [],
+    "categories": ["natural_landmark", "lodging", "animals"]
   },
   {
     "id": "ChIJFQAxRh3vjUYR3ATJP4CqusE",
@@ -754,10 +466,14 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "Pennek Solutions Oy",
-    "location": { "lat": 60.32295389999999, "lon": 24.5085123 },
+    "location": {
+      "lat": 60.32295389999999,
+      "lon": 24.5085123
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [],
-    "flickr_objects_ml": []
+    "flickr_objects_ml": [],
+    "categories": ["meadow", "animals"]
   },
   {
     "id": "ChIJz0HGC1PujUYRcTssY8gOuGs",
@@ -770,7 +486,10 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "ReiConsult Oy",
-    "location": { "lat": 60.31318999999999, "lon": 24.5397494 },
+    "location": {
+      "lat": 60.31318999999999,
+      "lon": 24.5397494
+    },
     "flickr_tags": [
       "uusimaa",
       "summer",
@@ -784,13 +503,13 @@
       "samsung",
       "edge",
       "galaxys8",
-      "kes\u00e4",
+      "kesä",
       "bus",
-      "nuuksionp\u00e4\u00e4",
+      "nuuksionpää",
       "june",
       "stop",
       "randoalleycat",
-      "rando\u00e4ll\u00e4rit",
+      "randoällärit",
       "s8",
       "hvk",
       "hugovk",
@@ -808,7 +527,8 @@
       "mailbox",
       "alp",
       "picket_fence"
-    ]
+    ],
+    "categories": ["animals", "meadow", "lodging"]
   },
   {
     "id": "ChIJVdumAwLvjUYR34zfUDR4LLE",
@@ -845,11 +565,11 @@
           "profile_photo_url": "https://lh5.googleusercontent.com/-aLZqVpZJW6s/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rfJxNLVeZEIOaDR420cvtL0V6SWmQ/s128-c0x00000000-cc-rp-mo/photo.jpg",
           "rating": 5,
           "relative_time_description": "4 months ago",
-          "text": "Warm welcoming cozy place where you\u2019d become never wanna leave here\ud83d\ude03 The smoke sauna and jumping in the lake is a must try!! Canoeing during the sunset time is also strongly recommended!! Pekka, the host is so warm and willing to make our stay enjoyable. Dishes are great. A day trip is not enough to enjoy the nature, cozyness and the beauty of this place, I think^_^",
+          "text": "Warm welcoming cozy place where you’d become never wanna leave here😃 The smoke sauna and jumping in the lake is a must try!! Canoeing during the sunset time is also strongly recommended!! Pekka, the host is so warm and willing to make our stay enjoyable. Dishes are great. A day trip is not enough to enjoy the nature, cozyness and the beauty of this place, I think^_^",
           "time": 1561331367
         },
         {
-          "author_name": "Aleksander Ho\u0142y\u0144ski",
+          "author_name": "Aleksander Hołyński",
           "author_url": "https://www.google.com/maps/contrib/105846353438790728460/reviews",
           "language": "en",
           "profile_photo_url": "https://lh3.googleusercontent.com/a-/AAuE7mB1c7weTWGmCGP2diNUdW67vRYccxpZTXMOSpwrdg=s128-c0x00000000-cc-rp-mo",
@@ -892,7 +612,10 @@
       "establishment"
     ],
     "name": "Green Window Oy",
-    "location": { "lat": 60.3274887, "lon": 24.4934623 },
+    "location": {
+      "lat": 60.3274887,
+      "lon": 24.4934623
+    },
     "flickr_tags": [
       "wing",
       "dc982",
@@ -1019,7 +742,7 @@
       "houses",
       "arbres",
       "950",
-      "\u00e9tang",
+      "étang",
       "nuage",
       "colorful",
       "dc9",
@@ -1128,14 +851,22 @@
       "megalith",
       "manhole_cover",
       "candle"
-    ]
+    ],
+    "categories": ["lodging", "food", "health_fitness", "natural_landmark"]
   },
   {
     "id": "ChIJx-RksE3ujUYRbJ5U_dORm_o",
     "place_details": {
       "opening_times": {
         "open_now": true,
-        "periods": [{ "open": { "day": 0, "time": "0000" } }],
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0000"
+            }
+          }
+        ],
         "weekday_text": [
           "Monday: Open 24 hours",
           "Tuesday: Open 24 hours",
@@ -1153,7 +884,10 @@
     },
     "google_types": ["park", "point_of_interest", "establishment"],
     "name": "Pallokivi - orbicular granite formations",
-    "location": { "lat": 60.3099, "lon": 24.5477999 },
+    "location": {
+      "lat": 60.3099,
+      "lon": 24.5477999
+    },
     "flickr_tags": [
       "gkn344",
       "lena",
@@ -1166,8 +900,8 @@
       "helsinki",
       "citea",
       "gkn",
-      "\u30a6\u30fc\u30b7\u30de\u30fc",
-      "\u30d5\u30a3\u30f3\u30e9\u30f3\u30c9",
+      "ウーシマー",
+      "フィンランド",
       "espoo",
       "vdlsb200",
       "844",
@@ -1226,7 +960,8 @@
       "dam",
       "ashcan",
       "totem_pole"
-    ]
+    ],
+    "categories": ["natural_landmark"]
   },
   {
     "id": "ChIJ6VOUl6LujUYRIlt_dbZn_oU",
@@ -1236,7 +971,7 @@
       "rating": 5,
       "reviews": [
         {
-          "author_name": "Jan wasstr\u00f6m",
+          "author_name": "Jan wasström",
           "author_url": "https://www.google.com/maps/contrib/110925007221121660722/reviews",
           "profile_photo_url": "https://lh3.ggpht.com/-FCylXggcd4E/AAAAAAAAAAI/AAAAAAAAAAA/5zKt-SaG_no/s128-c0x00000000-cc-rp-mo/photo.jpg",
           "rating": 5,
@@ -1249,11 +984,15 @@
       "website": "http://www.lautta-sahko.fi/"
     },
     "google_types": ["point_of_interest", "establishment"],
-    "name": "Lautta-S\u00e4hk\u00f6 Ky",
-    "location": { "lat": 60.2941859, "lon": 24.4541395 },
+    "name": "Lautta-Sähkö Ky",
+    "location": {
+      "lat": 60.2941859,
+      "lon": 24.4541395
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [],
-    "flickr_objects_ml": []
+    "flickr_objects_ml": [],
+    "categories": ["lodging", "meadow"]
   },
   {
     "id": "ChIJ8Xn130zujUYRkHtQeVFJofQ",
@@ -1265,8 +1004,11 @@
       "website": "Nothing"
     },
     "google_types": ["point_of_interest", "establishment"],
-    "name": "Etel\u00e4-Suomen Ekokiinteist\u00f6t Oy",
-    "location": { "lat": 60.3117993, "lon": 24.5511827 },
+    "name": "Etelä-Suomen Ekokiinteistöt Oy",
+    "location": {
+      "lat": 60.3117993,
+      "lon": 24.5511827
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [
       "https://live.staticflickr.com/7607/17041818371_1417192d15.jpg",
@@ -1281,7 +1023,8 @@
       "stretcher",
       "vulture",
       "stone_wall"
-    ]
+    ],
+    "categories": ["waterside", "meadow", "lodging", "outdoor_activity"]
   },
   {
     "id": "ChIJjdwTKLPvjUYRiqubU5KPyXI",
@@ -1297,17 +1040,17 @@
           "profile_photo_url": "https://lh4.ggpht.com/-lstDExrtpwg/AAAAAAAAAAI/AAAAAAAAAAA/TZEEM027Gf8/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
           "rating": 5,
           "relative_time_description": "a month ago",
-          "text": "Siisti maja er\u00e4maamaisemassa. Majallle on hellpo l\u00f6yt\u00e4\u00e4 ja sielt\u00e4 on helppo suunnistaa eri suuntiin ja erilaisiin maastoihin. Hyv\u00e4 sauna.",
+          "text": "Siisti maja erämaamaisemassa. Majallle on hellpo löytää ja sieltä on helppo suunnistaa eri suuntiin ja erilaisiin maastoihin. Hyvä sauna.",
           "time": 1570652720
         },
         {
-          "author_name": "Santeri Kentt\u00e4",
+          "author_name": "Santeri Kenttä",
           "author_url": "https://www.google.com/maps/contrib/104281184566152069525/reviews",
           "language": "fi",
           "profile_photo_url": "https://lh6.ggpht.com/-c4UBPvlOAiI/AAAAAAAAAAI/AAAAAAAAAAA/rBcnCpfOlw4/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
           "rating": 5,
           "relative_time_description": "a year ago",
-          "text": "Hyv\u00e4 paikka vaikka y\u00f6py\u00e4 luonnossa liikkumisen lomassa.",
+          "text": "Hyvä paikka vaikka yöpyä luonnossa liikkumisen lomassa.",
           "time": 1527352375
         },
         {
@@ -1317,7 +1060,7 @@
           "profile_photo_url": "https://lh6.ggpht.com/-E2XVDqxXxT4/AAAAAAAAAAI/AAAAAAAAAAA/9EBaghsuSAw/s128-c0x00000000-cc-rp-mo/photo.jpg",
           "rating": 5,
           "relative_time_description": "2 years ago",
-          "text": "Vietetty laadukkaita leirej\u00e4. L\u00e4hell\u00e4 asutusta mutta kuitenki sopivan kaukana. Sauna suuri sek\u00e4 hyv\u00e4n kokoiset s\u00e4nggyt. Eik\u00e4 alueen maastojsta ole mit\u00e4\u00e4n valitettavaa, nuuksion maastot ovat kyll\u00e4 loistavia. Ja karttoja l\u00f6ytyy alueelta!! Suunnittelen jo milloin voisin menn\u00e4 leirille.",
+          "text": "Vietetty laadukkaita leirejä. Lähellä asutusta mutta kuitenki sopivan kaukana. Sauna suuri sekä hyvän kokoiset sänggyt. Eikä alueen maastojsta ole mitään valitettavaa, nuuksion maastot ovat kyllä loistavia. Ja karttoja löytyy alueelta!! Suunnittelen jo milloin voisin mennä leirille.",
           "time": 1510388347
         },
         {
@@ -1327,7 +1070,7 @@
           "profile_photo_url": "https://lh3.ggpht.com/--Sio3OCu3-Y/AAAAAAAAAAI/AAAAAAAAAAA/wfJLr4jcBp8/s128-c0x00000000-cc-rp-mo/photo.jpg",
           "rating": 5,
           "relative_time_description": "2 years ago",
-          "text": "St\u00f6rre skogsstuga i fint skick! Fantastisk stor bastu med tillh\u00f6rande omkl\u00e4dningsrum, passar perfekt efter en l\u00e5ng tr\u00e4ning i den n\u00e4rliggande skogen. I stugan finns allt man kan \u00f6nska sig, m\u00e5nga sovplatser, k\u00f6k, soffor mm. Rekommenderas!",
+          "text": "Större skogsstuga i fint skick! Fantastisk stor bastu med tillhörande omklädningsrum, passar perfekt efter en lång träning i den närliggande skogen. I stugan finns allt man kan önska sig, många sovplatser, kök, soffor mm. Rekommenderas!",
           "time": 1510395829
         },
         {
@@ -1346,12 +1089,16 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "OK 77 Seuramaja/ OK 77 Klubbstuga",
-    "location": { "lat": 60.3135708, "lon": 24.5532007 },
+    "location": {
+      "lat": 60.3135708,
+      "lon": 24.5532007
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [
       "https://live.staticflickr.com/2306/3534759105_4685b1b182.jpg"
     ],
-    "flickr_objects_ml": ["valley", "cliff", "maze", "vulture", "stretcher"]
+    "flickr_objects_ml": ["valley", "cliff", "maze", "vulture", "stretcher"],
+    "categories": ["natural_landmark", "meadow", "waterside", "health_fitness"]
   },
   {
     "id": "ChIJc5OQxUzujUYRI6uUs3zD3Zs",
@@ -1406,15 +1153,18 @@
       "website": "https://heko.org/ky%C3%B6peli/"
     },
     "google_types": ["lodging", "point_of_interest", "establishment"],
-    "name": "Ky\u00f6peli",
-    "location": { "lat": 60.3119998, "lon": 24.5533301 },
+    "name": "Kyöpeli",
+    "location": {
+      "lat": 60.3119998,
+      "lon": 24.5533301
+    },
     "flickr_tags": [
       "fga16",
       "awards",
       "neogames",
       "game",
       "finnish",
-      "pelinkehitt\u00e4j\u00e4t",
+      "pelinkehittäjät",
       "finnishgameindustry",
       "playfinland"
     ],
@@ -1427,13 +1177,11 @@
     ],
     "flickr_objects_ml": [
       "gown",
-      "miniskirt",
       "oboe",
       "stretcher",
       "sarong",
       "sax",
       "jean",
-      "assault_rifle",
       "feather_boa",
       "revolver",
       "groom",
@@ -1446,7 +1194,8 @@
       "valley",
       "rifle",
       "stole"
-    ]
+    ],
+    "categories": ["outdoor_activity", "lodging", "health_fitness", "animals"]
   },
   {
     "id": "ChIJGcVA5EzujUYRmPQ3YRAAQ6s",
@@ -1465,7 +1214,7 @@
           "profile_photo_url": "https://lh3.googleusercontent.com/-_pCUrf36OrQ/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcRqG9YfyjTcs1FADu2c_JGCvLeOg/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
           "rating": 3,
           "relative_time_description": "a week ago",
-          "text": "Partiolaisten er\u00e4k\u00e4mpp\u00e4. S\u00e4hk\u00f6l\u00e4mmitys ja takka. Kaksikerroslaverit, joihin mahtuu parikymment\u00e4 y\u00f6pyj\u00e4\u00e4.",
+          "text": "Partiolaisten eräkämppä. Sähkölämmitys ja takka. Kaksikerroslaverit, joihin mahtuu parikymmentä yöpyjää.",
           "time": 1572771416
         },
         {
@@ -1475,7 +1224,7 @@
           "profile_photo_url": "https://lh5.googleusercontent.com/-FsVr6zgYPHg/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3req2jnn3zDtF5V5fF_F2nySIk0ceQ/s128-c0x00000000-cc-rp-mo/photo.jpg",
           "rating": 5,
           "relative_time_description": "a month ago",
-          "text": "Vaatimaton mutta mukava m\u00f6kki. Kauniissa ja rauhallisessa paikassaa",
+          "text": "Vaatimaton mutta mukava mökki. Kauniissa ja rauhallisessa paikassaa",
           "time": 1571064841
         },
         {
@@ -1485,7 +1234,7 @@
           "profile_photo_url": "https://lh4.googleusercontent.com/-P_NirIVyM-8/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rczHH4uVR-mY6P0vh9x7Ni34ntfSA/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
           "rating": 4,
           "relative_time_description": "a year ago",
-          "text": "Hyv\u00e4 partiok\u00e4mpp\u00e4.",
+          "text": "Hyvä partiokämppä.",
           "time": 1539520850
         },
         {
@@ -1510,11 +1259,14 @@
         }
       ],
       "amount_ratings": 6,
-      "website": "http://www.partiok\u00e4mp\u00e4t.fi/"
+      "website": "http://www.partiokämpät.fi/"
     },
     "google_types": ["lodging", "point_of_interest", "establishment"],
-    "name": "Piilopirtti - Vuokrattava m\u00f6kki",
-    "location": { "lat": 60.3108089, "lon": 24.55426169999999 },
+    "name": "Piilopirtti - Vuokrattava mökki",
+    "location": {
+      "lat": 60.3108089,
+      "lon": 24.55426169999999
+    },
     "flickr_tags": ["espoo", "uusimaa", "finland", "fi"],
     "flickr_picture_urls": [
       "https://live.staticflickr.com/659/22772599294_06909ab25d.jpg",
@@ -1530,7 +1282,8 @@
       "stretcher",
       "vulture",
       "stone_wall"
-    ]
+    ],
+    "categories": ["lodging", "outdoor_activity", "meadow", "waterside"]
   },
   {
     "id": "ChIJeeSDJWjujUYR_Bjq68gp-T0",
@@ -1543,7 +1296,10 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "Pro Life Dogs",
-    "location": { "lat": 60.2923233, "lon": 24.5289967 },
+    "location": {
+      "lat": 60.2923233,
+      "lon": 24.5289967
+    },
     "flickr_tags": [
       "portrait",
       "supplements",
@@ -1557,7 +1313,7 @@
       "120mmphotography",
       "ribbonawareness",
       "relyon",
-      "siikaj\u00e4rvi",
+      "siikajärvi",
       "kodakfilm",
       "sensational",
       "120mm",
@@ -1800,7 +1556,8 @@
       "boathouse",
       "fountain",
       "pillow"
-    ]
+    ],
+    "categories": ["meadow", "animals", "outdoor_activity"]
   },
   {
     "id": "ChIJ7WWk3kjujUYR3NnagphRoPY",
@@ -1821,7 +1578,7 @@
       "rating": 4.3,
       "reviews": [
         {
-          "author_name": "J\u0101nis B\u0113rzi\u0146\u0161",
+          "author_name": "Jānis Bērziņš",
           "author_url": "https://www.google.com/maps/contrib/113601264240281263388/reviews",
           "language": "en",
           "profile_photo_url": "https://lh4.ggpht.com/-bUYv6HA27Cc/AAAAAAAAAAI/AAAAAAAAAAA/y2boGePUo0A/s128-c0x00000000-cc-rp-mo/photo.jpg",
@@ -1841,13 +1598,13 @@
           "time": 1562524188
         },
         {
-          "author_name": "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440 \u041b\u0435\u0432\u0438\u043d",
+          "author_name": "Владимир Левин",
           "author_url": "https://www.google.com/maps/contrib/101405493684763985115/reviews",
           "language": "en",
           "profile_photo_url": "https://lh5.ggpht.com/-T_sRkjFf9a8/AAAAAAAAAAI/AAAAAAAAAAA/84Qt10x_GyA/s128-c0x00000000-cc-rp-mo/photo.jpg",
           "rating": 5,
           "relative_time_description": "3 months ago",
-          "text": "Very nice place with very lovely deers! For 25\u20ac also there are tea/coffee and bakings in nice place",
+          "text": "Very nice place with very lovely deers! For 25€ also there are tea/coffee and bakings in nice place",
           "time": 1563915107
         },
         {
@@ -1882,7 +1639,10 @@
       "establishment"
     ],
     "name": "Nuuksio Reindeer Park",
-    "location": { "lat": 60.30429229999999, "lon": 24.5515684 },
+    "location": {
+      "lat": 60.30429229999999,
+      "lon": 24.5515684
+    },
     "flickr_tags": ["finland"],
     "flickr_picture_urls": [
       "https://live.staticflickr.com/1958/45887319421_fa4aedbb5e.jpg",
@@ -1932,7 +1692,8 @@
       "totem_pole",
       "barrow",
       "lab_coat"
-    ]
+    ],
+    "categories": ["animals", "food", "natural_landmark", "outdoor_activity"]
   },
   {
     "id": "ChIJcwfm70zujUYRlksZ7donLp0",
@@ -1959,7 +1720,7 @@
           "profile_photo_url": "https://lh3.googleusercontent.com/a-/AAuE7mAkrMrwkg6Sv1sGruyehq8A8kpfYXGy5r6xB5DMCA=s128-c0x00000000-cc-rp-mo-ba4",
           "rating": 5,
           "relative_time_description": "3 months ago",
-          "text": "Tunnelmallinen m\u00f6kki niukoilla mukavuuksilla. Eteisess\u00e4 ja keitti\u00f6ss\u00e4 s\u00e4hk\u00f6t ja valot, tuvan puolella ja parvella ei s\u00e4hk\u00f6j\u00e4 tai valoja. L\u00e4mmitys takalla, tuo my\u00f6s valoa tuvan puolelle. Keitti\u00f6n laattalattia talvella kylm\u00e4, kannattaa varata sis\u00e4jalkineet. Hella ja uuni toimivat kaasulla.",
+          "text": "Tunnelmallinen mökki niukoilla mukavuuksilla. Eteisessä ja keittiössä sähköt ja valot, tuvan puolella ja parvella ei sähköjä tai valoja. Lämmitys takalla, tuo myös valoa tuvan puolelle. Keittiön laattalattia talvella kylmä, kannattaa varata sisäjalkineet. Hella ja uuni toimivat kaasulla.",
           "time": 1565672644
         },
         {
@@ -1969,7 +1730,7 @@
           "profile_photo_url": "https://lh5.googleusercontent.com/-3zGVJ_F3jNI/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rdcIUca4A4n7HZYFbNSjpQU0vEn2A/s128-c0x00000000-cc-rp-mo/photo.jpg",
           "rating": 5,
           "relative_time_description": "a month ago",
-          "text": "Tosi hyv\u00e4 paikka",
+          "text": "Tosi hyvä paikka",
           "time": 1569695830
         },
         {
@@ -1979,7 +1740,7 @@
           "profile_photo_url": "https://lh4.googleusercontent.com/-P_NirIVyM-8/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rczHH4uVR-mY6P0vh9x7Ni34ntfSA/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
           "rating": 5,
           "relative_time_description": "a year ago",
-          "text": "Kiva partiok\u00e4mpp\u00e4.",
+          "text": "Kiva partiokämppä.",
           "time": 1538823410
         },
         {
@@ -1989,11 +1750,11 @@
           "profile_photo_url": "https://lh3.googleusercontent.com/a-/AAuE7mDbVnKhtd4nxXyTfEnnMdaV11ievEE1YeVAmNskAn0=s128-c0x00000000-cc-rp-mo-ba5",
           "rating": 5,
           "relative_time_description": "3 years ago",
-          "text": "Viihtyis\u00e4 partiok\u00e4mpp\u00e4, jossa tullut vietetty\u00e4 viikonloppu pariin otteeseen. L\u00e4hist\u00f6ll\u00e4 on kaivo, josta saa vett\u00e4 nappia painamalla (mit\u00e4h\u00e4n jos se j\u00e4isi ala-asentoon, tulisiko vett\u00e4 maailman tappiin asti?). Kaivon l\u00e4hell\u00e4 on sauna. Korvenkolkan m\u00f6kist\u00e4 sadan metrin p\u00e4\u00e4ss\u00e4 sijaitsee puuvaja ja vessat. M\u00f6kin sis\u00e4ll\u00e4 on kaasulla toimiva liesi ja ainakin yhdess\u00e4 paikkaa pistorasia, joista toinen paikka on varattu j\u00e4\u00e4kaapille. Sis\u00e4ll\u00e4 on takka, joka l\u00e4mmitt\u00e4\u00e4 mukavasti talven kylmin\u00e4 iltoina. Takkaa polttaessa palovaroitin alkaa helposti laulamaan jonkin ajan p\u00e4\u00e4st\u00e4 (ja sytytyksen aikana), jolloin jonkun on ment\u00e4v\u00e4 yl\u00e4tasanteelle \"rauhoittelemaan\" palovaroitinta sanomalehdell\u00e4. Ei oikeastaan mit\u00e4\u00e4n moitteen sanaa k\u00e4mp\u00e4st\u00e4, viis plus.. edelliset k\u00e4ytt\u00e4j\u00e4t voisivat kyll\u00e4 muistaa tiskata astiat eik\u00e4 heitt\u00e4\u00e4 niit\u00e4 likaisina kaappiin.",
+          "text": "Viihtyisä partiokämppä, jossa tullut vietettyä viikonloppu pariin otteeseen. Lähistöllä on kaivo, josta saa vettä nappia painamalla (mitähän jos se jäisi ala-asentoon, tulisiko vettä maailman tappiin asti?). Kaivon lähellä on sauna. Korvenkolkan mökistä sadan metrin päässä sijaitsee puuvaja ja vessat. Mökin sisällä on kaasulla toimiva liesi ja ainakin yhdessä paikkaa pistorasia, joista toinen paikka on varattu jääkaapille. Sisällä on takka, joka lämmittää mukavasti talven kylminä iltoina. Takkaa polttaessa palovaroitin alkaa helposti laulamaan jonkin ajan päästä (ja sytytyksen aikana), jolloin jonkun on mentävä ylätasanteelle \"rauhoittelemaan\" palovaroitinta sanomalehdellä. Ei oikeastaan mitään moitteen sanaa kämpästä, viis plus.. edelliset käyttäjät voisivat kyllä muistaa tiskata astiat eikä heittää niitä likaisina kaappiin.",
           "time": 1451072866
         },
         {
-          "author_name": "Samuel Rinnetm\u00e4ki",
+          "author_name": "Samuel Rinnetmäki",
           "author_url": "https://www.google.com/maps/contrib/113419466188617267602/reviews",
           "profile_photo_url": "https://lh3.googleusercontent.com/a-/AAuE7mAdVmdiN57BZECDteqY6yLI9-KrqwLUWrHgEBlmyg=s128-c0x00000000-cc-rp-mo-ba4",
           "rating": 4,
@@ -2003,11 +1764,14 @@
         }
       ],
       "amount_ratings": 13,
-      "website": "http://www.partiok\u00e4mp\u00e4t.fi/"
+      "website": "http://www.partiokämpät.fi/"
     },
     "google_types": ["lodging", "point_of_interest", "establishment"],
-    "name": "Korvenkolkka - Vuokram\u00f6kki",
-    "location": { "lat": 60.3122969, "lon": 24.5560851 },
+    "name": "Korvenkolkka - Vuokramökki",
+    "location": {
+      "lat": 60.3122969,
+      "lon": 24.5560851
+    },
     "flickr_tags": [
       "nuuksio",
       "finland",
@@ -2069,7 +1833,8 @@
       "breakwater",
       "totem_pole",
       "marimba"
-    ]
+    ],
+    "categories": ["animals", "outdoor_activity", "food"]
   },
   {
     "id": "ChIJeeyoWEvujUYRcnlBdbGiOr0",
@@ -2089,7 +1854,7 @@
           "profile_photo_url": "https://lh3.googleusercontent.com/a-/AAuE7mDbINB5k1UC-6hA2Lm-YjrP0VSTLl0xRa64lDMedQ=s128-c0x00000000-cc-rp-mo",
           "rating": 3,
           "relative_time_description": "a year ago",
-          "text": "Liian kylm\u00e4",
+          "text": "Liian kylmä",
           "time": 1520678086
         },
         {
@@ -2130,11 +1895,14 @@
         }
       ],
       "amount_ratings": 6,
-      "website": "http://www.partiok\u00e4mp\u00e4t.fi/"
+      "website": "http://www.partiokämpät.fi/"
     },
     "google_types": ["lodging", "point_of_interest", "establishment"],
-    "name": "M\u00f6rrim\u00f6ykky - Vuokram\u00f6kki",
-    "location": { "lat": 60.31112169999999, "lon": 24.5563697 },
+    "name": "Mörrimöykky - Vuokramökki",
+    "location": {
+      "lat": 60.31112169999999,
+      "lon": 24.5563697
+    },
     "flickr_tags": ["espoo", "uusimaa", "finland", "fi"],
     "flickr_picture_urls": [
       "https://live.staticflickr.com/659/22772599294_06909ab25d.jpg",
@@ -2150,7 +1918,8 @@
       "stretcher",
       "vulture",
       "stone_wall"
-    ]
+    ],
+    "categories": ["lodging", "waterside", "animals"]
   },
   {
     "id": "ChIJDS4xPhbsjUYREBCOuVO1AAo",
@@ -2163,7 +1932,10 @@
     },
     "google_types": ["locality", "political"],
     "name": "Veikkola",
-    "location": { "lat": 60.2699285, "lon": 24.4431908 },
+    "location": {
+      "lat": 60.2699285,
+      "lon": 24.4431908
+    },
     "flickr_tags": [
       "sunset",
       "19mm",
@@ -2238,7 +2010,7 @@
       "calm",
       "tree",
       "bracketing",
-      "m\u00e4nty",
+      "mänty",
       "amateurphotography",
       "nature",
       "a7rmk3",
@@ -2339,7 +2111,8 @@
       "megalith",
       "hen-of-the-woods",
       "chiton"
-    ]
+    ],
+    "categories": ["waterside", "natural_landmark"]
   },
   {
     "id": "ChIJAwxu0kfujUYRugGQhKIIlok",
@@ -2401,7 +2174,10 @@
       "establishment"
     ],
     "name": "Safaritalo",
-    "location": { "lat": 60.300391, "lon": 24.55160399999999 },
+    "location": {
+      "lat": 60.300391,
+      "lon": 24.55160399999999
+    },
     "flickr_tags": [
       "natur",
       "uusimaa",
@@ -2423,7 +2199,7 @@
       "reflection",
       "fall",
       "reflexion",
-      "sy\u00f6te",
+      "syöte",
       "calm",
       "ruhe",
       "finland",
@@ -2456,12 +2232,12 @@
       "journey",
       "safaritalo",
       "tourismus",
-      "isosy\u00f6te",
+      "isosyöte",
       "ridge",
       "clouds",
       "departure",
       "europe",
-      "pudasj\u00e4rvi",
+      "pudasjärvi",
       "nuuksianationalpark",
       "naturepark"
     ],
@@ -2550,7 +2326,8 @@
       "barrow",
       "earthstar",
       "freight_car"
-    ]
+    ],
+    "categories": ["health_fitness", "food", "lodging", "waterside"]
   },
   {
     "id": "ChIJ01YXeWPujUYRwBOcd9qZmEk",
@@ -2563,10 +2340,14 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "TMI Anne Riihonen",
-    "location": { "lat": 60.28758209999999, "lon": 24.5070139 },
+    "location": {
+      "lat": 60.28758209999999,
+      "lon": 24.5070139
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [],
-    "flickr_objects_ml": []
+    "flickr_objects_ml": [],
+    "categories": ["meadow", "waterside", "outdoor_activity"]
   },
   {
     "id": "ChIJIVEXeWPujUYRGpTFU4E7g-c",
@@ -2578,11 +2359,15 @@
       "website": "Nothing"
     },
     "google_types": ["point_of_interest", "establishment"],
-    "name": "Jylh\u00e4Games Oy",
-    "location": { "lat": 60.28758209999999, "lon": 24.5070139 },
+    "name": "JylhäGames Oy",
+    "location": {
+      "lat": 60.28758209999999,
+      "lon": 24.5070139
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [],
-    "flickr_objects_ml": []
+    "flickr_objects_ml": [],
+    "categories": ["meadow", "waterside", "outdoor_activity"]
   },
   {
     "id": "ChIJP7e5f5jujUYRpstHimpabOw",
@@ -2598,7 +2383,7 @@
           "profile_photo_url": "https://lh4.ggpht.com/-YDR4J4zhUj0/AAAAAAAAAAI/AAAAAAAAAAA/9n37O4joecY/s128-c0x00000000-cc-rp-mo/photo.jpg",
           "rating": 1,
           "relative_time_description": "9 months ago",
-          "text": "Asiakaspalvelu ala-arvoista varsinkin jos yritt\u00e4\u00e4 tiedustella takuuta, ei jaksaa keskustella aiheesta ja ly\u00f6 luurin korvaan.",
+          "text": "Asiakaspalvelu ala-arvoista varsinkin jos yrittää tiedustella takuuta, ei jaksaa keskustella aiheesta ja lyö luurin korvaan.",
           "time": 1549697591
         },
         {
@@ -2611,7 +2396,7 @@
           "time": 1555359222
         },
         {
-          "author_name": "Roger Grundstr\u00f6m",
+          "author_name": "Roger Grundström",
           "author_url": "https://www.google.com/maps/contrib/108703074831800886511/reviews",
           "profile_photo_url": "https://lh5.ggpht.com/-esnH15ieKy0/AAAAAAAAAAI/AAAAAAAAAAA/o101NwRITvQ/s128-c0x00000000-cc-rp-mo/photo.jpg",
           "rating": 5,
@@ -2630,224 +2415,14 @@
       "establishment"
     ],
     "name": "Kisarengas Oy",
-    "location": { "lat": 60.2921485, "lon": 24.4542155 },
+    "location": {
+      "lat": 60.2921485,
+      "lon": 24.4542155
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [],
-    "flickr_objects_ml": []
-  },
-  {
-    "id": "ChIJiwZiu0fujUYRJxkegYdMW9g",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": "Nothing",
-      "rating": 4.5,
-      "reviews": [
-        {
-          "author_name": "Eero Karvinen",
-          "author_url": "https://www.google.com/maps/contrib/114334887062179002180/reviews",
-          "language": "fi",
-          "profile_photo_url": "https://lh6.ggpht.com/-Tlqw_vuDH-w/AAAAAAAAAAI/AAAAAAAAAAA/-XEFG4aFRa8/s128-c0x00000000-cc-rp-mo-ba5/photo.jpg",
-          "rating": 4,
-          "relative_time_description": "5 months ago",
-          "text": "Luonnon keskell\u00e4, sopivasti vanhanaikainen, viihtyis\u00e4 paikka tutustua luontoonkin.",
-          "time": 1559805707
-        },
-        {
-          "author_name": "Lauri Kovalainen",
-          "author_url": "https://www.google.com/maps/contrib/105354118385263766251/reviews",
-          "profile_photo_url": "https://lh6.ggpht.com/-YBFo3NqYBrI/AAAAAAAAAAI/AAAAAAAAAAA/e8cdvRQD7A4/s128-c0x00000000-cc-rp-mo/photo.jpg",
-          "rating": 5,
-          "relative_time_description": "9 months ago",
-          "text": "",
-          "time": 1548514200
-        }
-      ],
-      "amount_ratings": 2,
-      "website": "http://www.otava.fi/"
-    },
-    "google_types": ["point_of_interest", "establishment"],
-    "name": "Toukola",
-    "location": { "lat": 60.2986873, "lon": 24.5512186 },
-    "flickr_tags": [
-      "2019",
-      "helsingin",
-      "tranquility",
-      "wald",
-      "april",
-      "samsung",
-      "night",
-      "koskelantietrees",
-      "verlassen",
-      "nuuksio",
-      "espoo",
-      "metropolia",
-      "abfahrt",
-      "woods",
-      "journey",
-      "samsungsmg950f",
-      "soccer",
-      "lake",
-      "nacht",
-      "kev\u00e4t",
-      "mond",
-      "cabin",
-      "outdoor",
-      "smg950f",
-      "reflexion",
-      "finland",
-      "zug",
-      "snow",
-      "february",
-      "spring",
-      "sport",
-      "eisenbahn",
-      "hugovk",
-      "forest",
-      "autumn",
-      "samsunggalaxys8",
-      "samsungs8",
-      "helsingfors",
-      "naturepark",
-      "uusimaa",
-      "fog",
-      "plattform",
-      "naturereisen",
-      "bahnhof",
-      "ice",
-      "train",
-      "suomi",
-      "rain",
-      "platform",
-      "travel",
-      "reise",
-      "toukola",
-      "station",
-      "talvi",
-      "s8",
-      "europa",
-      "hvk",
-      "tourism",
-      "leaving",
-      "tourismus",
-      "ridge",
-      "clouds",
-      "nuuksianationalpark",
-      "natur",
-      "goldeneye",
-      "skandinavien",
-      "trees",
-      "moon",
-      "finnland",
-      "cameraphone",
-      "reflection",
-      "fall",
-      "calm",
-      "ruhe",
-      "tree",
-      "frozenlake",
-      "koskelantie",
-      "galaxys8",
-      "railway",
-      "family",
-      "arabia",
-      "scandinavia",
-      "boardwalk",
-      "kabine",
-      "arabianm\u00e4ki",
-      "winter",
-      "communitygarden",
-      "helsinki",
-      "departure",
-      "europe",
-      "tehdas",
-      "preservation"
-    ],
-    "flickr_picture_urls": [
-      "https://live.staticflickr.com/4399/36601760181_babf7ccaca.jpg",
-      "https://live.staticflickr.com/4184/34127019430_a11772d7e3.jpg",
-      "https://live.staticflickr.com/4165/34379363501_b55ba5b2ce.jpg",
-      "https://live.staticflickr.com/8770/28859611301_ac1b8d0c45.jpg",
-      "https://live.staticflickr.com/8708/28830929172_6e6ee12819.jpg",
-      "https://live.staticflickr.com/8801/16464022034_e6142de56a.jpg",
-      "https://live.staticflickr.com/8765/16900248479_9a5cccc942.jpg",
-      "https://live.staticflickr.com/7701/16464140334_ddc4b13808.jpg",
-      "https://live.staticflickr.com/7611/16899034400_0a522c0362.jpg",
-      "https://live.staticflickr.com/8707/17085875611_3e26975bec.jpg",
-      "https://live.staticflickr.com/65535/48919652457_78b31466d2.jpg",
-      "https://live.staticflickr.com/65535/48919652077_82b270c0f6.jpg",
-      "https://live.staticflickr.com/65535/48803690493_f3c9def9a0.jpg",
-      "https://live.staticflickr.com/65535/48804108702_c9441fde5b.jpg",
-      "https://live.staticflickr.com/65535/48292837611_bf0ca5f2cc.jpg",
-      "https://live.staticflickr.com/65535/47973553713_b0f27ed826.jpg",
-      "https://live.staticflickr.com/65535/47631586611_127b9f8d37.jpg",
-      "https://live.staticflickr.com/65535/47622902341_99174ab78f.jpg",
-      "https://live.staticflickr.com/65535/46707358195_e68a6221e2.jpg",
-      "https://live.staticflickr.com/65535/32680239257_73b664e6c4.jpg"
-    ],
-    "flickr_objects_ml": [
-      "snowmobile",
-      "worm_fence",
-      "mailbox",
-      "rugby_ball",
-      "ski",
-      "jigsaw_puzzle",
-      "park_bench",
-      "Cardigan",
-      "football_helmet",
-      "chainlink_fence",
-      "plastic_bag",
-      "stone_wall",
-      "lumbermill",
-      "mountain_tent",
-      "castle",
-      "balloon",
-      "prison",
-      "Eskimo_dog",
-      "pole",
-      "patio",
-      "tile_roof",
-      "West_Highland_white_terrier",
-      "maillot",
-      "church",
-      "barn",
-      "balance_beam",
-      "walking_stick",
-      "mobile_home",
-      "snowplow",
-      "birdhouse",
-      "plow",
-      "viaduct",
-      "impala",
-      "bannister",
-      "shovel",
-      "harvester",
-      "crane",
-      "spider_web",
-      "monastery",
-      "picket_fence",
-      "water_tower",
-      "obelisk",
-      "soccer_ball",
-      "puck",
-      "cliff",
-      "rapeseed",
-      "radio_telescope",
-      "bison",
-      "valley",
-      "boathouse",
-      "zebra",
-      "solar_dish",
-      "alp",
-      "dogsled",
-      "fountain",
-      "lakeside",
-      "geyser",
-      "canoe",
-      "breakwater",
-      "bell_cote",
-      "barrow",
-      "freight_car"
-    ]
+    "flickr_objects_ml": [],
+    "categories": ["lodging", "food", "meadow"]
   },
   {
     "id": "ChIJ5ZT0Dc_ujUYR6Zu18idzeAk",
@@ -2904,17 +2479,17 @@
           "profile_photo_url": "https://lh5.googleusercontent.com/-_VGe5DtnWLY/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcBcD7yjvkURwgYUREp9TS_3kIJpg/s128-c0x00000000-cc-rp-mo/photo.jpg",
           "rating": 3,
           "relative_time_description": "5 months ago",
-          "text": "Vanha er\u00e4m\u00f6kki luonnon helmassa.",
+          "text": "Vanha erämökki luonnon helmassa.",
           "time": 1559072668
         },
         {
-          "author_name": "Osku Kannusm\u00e4ki",
+          "author_name": "Osku Kannusmäki",
           "author_url": "https://www.google.com/maps/contrib/105565097214832499277/reviews",
           "language": "fi",
           "profile_photo_url": "https://lh3.googleusercontent.com/a-/AAuE7mCiIXrW_1S30DIv5w9nxE5OyUvpHsoL4kaY0HegwQ=s128-c0x00000000-cc-rp-mo-ba4",
           "rating": 5,
           "relative_time_description": "a year ago",
-          "text": "Hieno er\u00e4m\u00f6kki ja varsin hyv\u00e4 sauna. Mahtava pakopaikka aivan kaupungin tuntumassa.",
+          "text": "Hieno erämökki ja varsin hyvä sauna. Mahtava pakopaikka aivan kaupungin tuntumassa.",
           "time": 1519500143
         }
       ],
@@ -2923,14 +2498,17 @@
     },
     "google_types": ["lodging", "point_of_interest", "establishment"],
     "name": "Tikankolo - Natura Viva",
-    "location": { "lat": 60.3163724, "lon": 24.4526293 },
+    "location": {
+      "lat": 60.3163724,
+      "lon": 24.4526293
+    },
     "flickr_tags": [
       "nuuksio",
       "finland",
       "forest",
       "retki",
       "pond",
-      "mets\u00e4",
+      "metsä",
       "vihti",
       "luonto",
       "saarilampi",
@@ -2950,7 +2528,8 @@
       "lakeside",
       "canoe",
       "breakwater"
-    ]
+    ],
+    "categories": ["natural_landmark", "lodging", "waterside", "health_fitness"]
   },
   {
     "id": "ChIJAyN3w-rzjUYRbib4IuHU41A",
@@ -2963,10 +2542,14 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "Brrobustle Oy",
-    "location": { "lat": 60.2850607, "lon": 24.5203491 },
+    "location": {
+      "lat": 60.2850607,
+      "lon": 24.5203491
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [],
-    "flickr_objects_ml": []
+    "flickr_objects_ml": [],
+    "categories": ["natural_landmark", "waterside"]
   },
   {
     "id": "ChIJf7lzC2zujUYR5wFAfFNGdXU",
@@ -2979,10 +2562,14 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "Kunto Ja Terveys R.Y.",
-    "location": { "lat": 60.2858495, "lon": 24.5319617 },
+    "location": {
+      "lat": 60.2858495,
+      "lon": 24.5319617
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [],
-    "flickr_objects_ml": []
+    "flickr_objects_ml": [],
+    "categories": ["outdoor_activity", "animals", "meadow"]
   },
   {
     "id": "ChIJG35oLTnujUYRj_CXzClKCOI",
@@ -2991,38 +2578,74 @@
         "open_now": false,
         "periods": [
           {
-            "close": { "day": 0, "time": "1700" },
-            "open": { "day": 0, "time": "1000" }
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "1000"
+            }
           },
           {
-            "close": { "day": 2, "time": "1700" },
-            "open": { "day": 2, "time": "1000" }
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "1000"
+            }
           },
           {
-            "close": { "day": 3, "time": "1700" },
-            "open": { "day": 3, "time": "1000" }
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "1000"
+            }
           },
           {
-            "close": { "day": 4, "time": "1700" },
-            "open": { "day": 4, "time": "1000" }
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "1000"
+            }
           },
           {
-            "close": { "day": 5, "time": "1700" },
-            "open": { "day": 5, "time": "1000" }
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "1000"
+            }
           },
           {
-            "close": { "day": 6, "time": "1700" },
-            "open": { "day": 6, "time": "1000" }
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "1000"
+            }
           }
         ],
         "weekday_text": [
           "Monday: Closed",
-          "Tuesday: 10:00 AM \u2013 5:00 PM",
-          "Wednesday: 10:00 AM \u2013 5:00 PM",
-          "Thursday: 10:00 AM \u2013 5:00 PM",
-          "Friday: 10:00 AM \u2013 5:00 PM",
-          "Saturday: 10:00 AM \u2013 5:00 PM",
-          "Sunday: 10:00 AM \u2013 5:00 PM"
+          "Tuesday: 10:00 AM – 5:00 PM",
+          "Wednesday: 10:00 AM – 5:00 PM",
+          "Thursday: 10:00 AM – 5:00 PM",
+          "Friday: 10:00 AM – 5:00 PM",
+          "Saturday: 10:00 AM – 5:00 PM",
+          "Sunday: 10:00 AM – 5:00 PM"
         ]
       },
       "photo_refs": [
@@ -3100,7 +2723,10 @@
       "establishment"
     ],
     "name": "Ravintola Haltia",
-    "location": { "lat": 60.2935983, "lon": 24.5569698 },
+    "location": {
+      "lat": 60.2935983,
+      "lon": 24.5569698
+    },
     "flickr_tags": [
       "uusimaa",
       "analogcamera",
@@ -3113,9 +2739,9 @@
       "landscape",
       "finland",
       "restaurant",
-      "pitk\u00e4j\u00e4rvi",
+      "pitkäjärvi",
       "obstacle",
-      "lahdelmamahlama\u0308ki",
+      "lahdelmamahlamäki",
       "suomi",
       "blackandwhite",
       "monochrome",
@@ -3144,7 +2770,8 @@
       "Nothing",
       "https://live.staticflickr.com/5555/31360500340_4e4d73f3ec.jpg",
       "https://live.staticflickr.com/2855/10620887023_ce400dc0a6.jpg"
-    ]
+    ],
+    "categories": ["food", "lodging", "waterside", "animals"]
   },
   {
     "id": "ChIJlSfO7YTujUYR6tVpngv-sj0",
@@ -3157,7 +2784,10 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "Beauty Wave",
-    "location": { "lat": 60.2866614, "lon": 24.4757755 },
+    "location": {
+      "lat": 60.2866614,
+      "lon": 24.4757755
+    },
     "flickr_tags": [
       "sunset",
       "kiss",
@@ -3352,7 +2982,8 @@
       "lakeside",
       "breakwater",
       "bikini"
-    ]
+    ],
+    "categories": ["natural_landmark", "waterside"]
   },
   {
     "id": "ChIJc7A8NDnujUYRHb4I7kXJmZ8",
@@ -3364,15 +2995,18 @@
       "website": "https://www.folkhalsan.fi/om-folkhalsan/folkhalsan-utbildning-ab/"
     },
     "google_types": ["point_of_interest", "establishment"],
-    "name": "Folkh\u00e4lsan Utbildning Ab",
-    "location": { "lat": 60.29371629999999, "lon": 24.55792199999999 },
+    "name": "Folkhälsan Utbildning Ab",
+    "location": {
+      "lat": 60.29371629999999,
+      "lon": 24.55792199999999
+    },
     "flickr_tags": [
       "landscape",
       "uusimaa",
       "finland",
       "monochrome",
       "analogcamera",
-      "pitk\u00e4j\u00e4rvi",
+      "pitkäjärvi",
       "lake",
       "race",
       "obstacle",
@@ -3437,7 +3071,8 @@
       "canoe",
       "ashcan",
       "stole"
-    ]
+    ],
+    "categories": ["food", "lodging", "waterside", "outdoor_activity"]
   },
   {
     "id": "ChIJa9_Xg5nujUYRKzgAG712C5k",
@@ -3449,11 +3084,15 @@
       "website": "https://www.desjukasval.fi/start/"
     },
     "google_types": ["point_of_interest", "establishment"],
-    "name": "De Sjukas V\u00e4l rf",
-    "location": { "lat": 60.29042740000001, "lon": 24.4638961 },
+    "name": "De Sjukas Väl rf",
+    "location": {
+      "lat": 60.29042740000001,
+      "lon": 24.4638961
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [],
-    "flickr_objects_ml": []
+    "flickr_objects_ml": [],
+    "categories": ["meadow", "animals"]
   },
   {
     "id": "ChIJwx96rD7ujUYRrmQ5e-AlA90",
@@ -3462,8 +3101,14 @@
         "open_now": false,
         "periods": [
           {
-            "close": { "day": 6, "time": "0000" },
-            "open": { "day": 1, "time": "0000" }
+            "close": {
+              "day": 6,
+              "time": "0000"
+            },
+            "open": {
+              "day": 1,
+              "time": "0000"
+            }
           }
         ],
         "weekday_text": [
@@ -3499,7 +3144,7 @@
           "profile_photo_url": "https://lh3.googleusercontent.com/a-/AAuE7mDts2Ihfha6AmRKPsRIw4V8UhjMSB58tOH3zxP2=s128-c0x00000000-cc-rp-mo-ba4",
           "rating": 3,
           "relative_time_description": "a year ago",
-          "text": "Erinomainen idea, mutta makuupussit olivat liian heppoisia syyskuun \u00f6ihin (22.9.). T\u00e4m\u00e4 perusasia kuntoon ja rupeaa olemaan homma tikiss\u00e4.",
+          "text": "Erinomainen idea, mutta makuupussit olivat liian heppoisia syyskuun öihin (22.9.). Tämä perusasia kuntoon ja rupeaa olemaan homma tikissä.",
           "time": 1539857576
         },
         {
@@ -3509,7 +3154,7 @@
           "profile_photo_url": "https://lh4.googleusercontent.com/-ZnWESxXW6Zs/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rdLro5oiy11QxYM0gXMdER-CNsllg/s128-c0x00000000-cc-rp-mo/photo.jpg",
           "rating": 5,
           "relative_time_description": "a year ago",
-          "text": "Luonnon helmassa, lintujen \u00e4\u00e4ni\u00e4 kuunnellen ja j\u00e4rvin\u00e4k\u00f6alaa ihaillen \ud83d\udc9a\ud83d\udc99",
+          "text": "Luonnon helmassa, lintujen ääniä kuunnellen ja järvinäköalaa ihaillen 💚💙",
           "time": 1532078118
         },
         {
@@ -3527,14 +3172,17 @@
     },
     "google_types": ["lodging", "point_of_interest", "establishment"],
     "name": "Tentsile Experience Green EcoCamp Nuuksio",
-    "location": { "lat": 60.2928094, "lon": 24.5596285 },
+    "location": {
+      "lat": 60.2928094,
+      "lon": 24.5596285
+    },
     "flickr_tags": [
       "landscape",
       "uusimaa",
       "finland",
       "monochrome",
       "analogcamera",
-      "pitk\u00e4j\u00e4rvi",
+      "pitkäjärvi",
       "lake",
       "race",
       "obstacle",
@@ -3599,7 +3247,8 @@
       "canoe",
       "ashcan",
       "stole"
-    ]
+    ],
+    "categories": ["waterside", "lodging", "outdoor_activity"]
   },
   {
     "id": "ChIJPf_hVJjujUYRnBp2tDbIQjY",
@@ -3612,10 +3261,14 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "Kooditutorit Konsultointi Oy",
-    "location": { "lat": 60.291321, "lon": 24.4593377 },
+    "location": {
+      "lat": 60.291321,
+      "lon": 24.4593377
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [],
-    "flickr_objects_ml": []
+    "flickr_objects_ml": [],
+    "categories": ["meadow", "animals", "outdoor_activity"]
   },
   {
     "id": "ChIJtyjsgcnujUYRgEZNVBYZpqU",
@@ -3627,8 +3280,11 @@
       "website": "http://www.punakettu.com/"
     },
     "google_types": ["natural_feature", "point_of_interest", "establishment"],
-    "name": "Hymyilev\u00e4 Punakettu luonto- ja ohjelmapalvelut",
-    "location": { "lat": 60.2791488, "lon": 24.50228989999999 },
+    "name": "Hymyilevä Punakettu luonto- ja ohjelmapalvelut",
+    "location": {
+      "lat": 60.2791488,
+      "lon": 24.50228989999999
+    },
     "flickr_tags": [
       "uusimaa",
       "finland",
@@ -3689,7 +3345,8 @@
       "canoe",
       "breakwater",
       "totem_pole"
-    ]
+    ],
+    "categories": ["natural_landmark", "waterside", "food", "lodging", "meadow"]
   },
   {
     "id": "ChIJtSDEMp3zjUYRiGYBpkQJfoY",
@@ -3701,8 +3358,11 @@
       "website": "https://punakettu.com/"
     },
     "google_types": ["point_of_interest", "establishment"],
-    "name": "Hymyilev\u00e4 Punakettu - Luonto ja Ohjelmapalvelut",
-    "location": { "lat": 60.27898700000001, "lon": 24.502741 },
+    "name": "Hymyilevä Punakettu - Luonto ja Ohjelmapalvelut",
+    "location": {
+      "lat": 60.27898700000001,
+      "lon": 24.502741
+    },
     "flickr_tags": [
       "uusimaa",
       "finland",
@@ -3763,7 +3423,8 @@
       "canoe",
       "breakwater",
       "totem_pole"
-    ]
+    ],
+    "categories": ["natural_landmark", "waterside", "food", "lodging", "meadow"]
   },
   {
     "id": "ChIJnbADRnnujUYRk9xY3pciyjE",
@@ -3776,7 +3437,10 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "Vapo Oy",
-    "location": { "lat": 60.27881929999999, "lon": 24.50009 },
+    "location": {
+      "lat": 60.27881929999999,
+      "lon": 24.50009
+    },
     "flickr_tags": [
       "uusimaa",
       "square",
@@ -3784,7 +3448,7 @@
       "instagramapp",
       "103rdflirdfli137",
       "finland",
-      "k\u00b0\u00a4v\u00b6uy\u00a4\u00fcm\u00f3\u00e10p",
+      "k°¤v¶uy¤ümóá0p",
       "insta",
       "trail",
       "squareformat",
@@ -3901,7 +3565,8 @@
       "washbasin",
       "candle",
       "marimba"
-    ]
+    ],
+    "categories": ["outdoor_activity", "natural_landmark"]
   },
   {
     "id": "ChIJyxu1PnnujUYRbF5dkFbIkDI",
@@ -3914,7 +3579,10 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "Devaid Oy",
-    "location": { "lat": 60.278161, "lon": 24.5001132 },
+    "location": {
+      "lat": 60.278161,
+      "lon": 24.5001132
+    },
     "flickr_tags": [
       "uusimaa",
       "finland",
@@ -3978,39 +3646,8 @@
       "breakwater",
       "totem_pole",
       "earthstar"
-    ]
-  },
-  {
-    "id": "ChIJU-8M1CzvjUYROiIYPB6gT_8",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": [
-        "CmRaAAAA1kojVJ9Ox1ByJ3L-eZ9FhZkxMgQWBUeZmsHO54hwq_d7bKyG-ydnRvnPo0KPlXxHzdMFEsbaKlLXlNfHliiy26QgUq-SPzL_-7HT4HB6X9gMYH914yVLhXluTvSAomCBEhDa2kZjQpEe06inK6sxA0aQGhTJ2Z0Q2iX0f09iJaEOCZ8nmDTEcw",
-        "CmRaAAAAhP9IrKhN_GttTzerAcl_e7xLGFQ7SPbIdxhaimYyijIxbLG3WW4xDJK2fD08IXrl0bQGetSEWPJj4kH83PP_KLjBG3Zz0i6jVh1r_T_9U5gbYYcKBkb07d42w6ndQquYEhBMOXnxQoyuiAVVfxRL7rDMGhSA8dYCDT5lDFkTNfpBy4I0BO1k1w",
-        "CmRaAAAA_RP9IXXtBo4upUHLEYSJUyvxU0JMTs2ASNiDFxQqteJznNy29axBG1Mr8GyG0MbhfNN3NwoFrESPpvjgIgy_vzeorFRMTs8SgzCxa-Eb9lmQWnnVjxkqkyev7UtVE1G0EhBrf1jHXZLAimrAjCd1RyTtGhTiLt3RfrEQQv1YSb-ulrRaOSwbow",
-        "CmRaAAAAPho0Ah2YHq6stHYsI6KS_7FaNDN8_tFPGDlGaPY9f_G1KnF41jjNgNu-IhGQTijI29XLNhBM00h1ITy1M1ugeRpJGGqCOHPHB_xRt7Q2x1LxxdXbqPwSWwrRKEOQOrLJEhAAtEbrpx57G-SFadFt2AYfGhS73oa64JEDtJiiK8eNweMDDBNQeQ"
-      ],
-      "rating": 5,
-      "reviews": [
-        {
-          "author_name": "Markus Saltvik",
-          "author_url": "https://www.google.com/maps/contrib/106179799069268725984/reviews",
-          "profile_photo_url": "https://lh3.ggpht.com/-X-lx240dqLg/AAAAAAAAAAI/AAAAAAAAAAA/vc6qNVZXYrw/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
-          "rating": 5,
-          "relative_time_description": "a year ago",
-          "text": "",
-          "time": 1529690974
-        }
-      ],
-      "amount_ratings": 1,
-      "website": "https://www.keravanseurakunta.fi/yhteystiedot"
-    },
-    "google_types": ["point_of_interest", "establishment"],
-    "name": "Keravan Evankelisluterilainen Seurakunta",
-    "location": { "lat": 60.3403043, "lon": 24.45840149999999 },
-    "flickr_tags": [],
-    "flickr_picture_urls": [],
-    "flickr_objects_ml": []
+    ],
+    "categories": ["outdoor_activity", "health_fitness"]
   },
   {
     "id": "ChIJqf7hu3LujUYR8S9P5YFUH14",
@@ -4023,9 +3660,19 @@
     },
     "google_types": ["point_of_interest", "establishment"],
     "name": "SUOMALAIS-UGRILAISEN SAMANISMIN KESKUS",
-    "location": { "lat": 60.2788174, "lon": 24.5317539 },
+    "location": {
+      "lat": 60.2788174,
+      "lon": 24.5317539
+    },
     "flickr_tags": [],
     "flickr_picture_urls": [],
-    "flickr_objects_ml": []
+    "flickr_objects_ml": [],
+    "categories": [
+      "outdoor_activity",
+      "health_fitness",
+      "meadow",
+      "animals",
+      "waterside"
+    ]
   }
 ]
