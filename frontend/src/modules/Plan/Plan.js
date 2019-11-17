@@ -77,6 +77,7 @@ export default ({
     card: {}
   });
   const [filterOpen, setFilterOpen] = useState(true);
+  const [map, setMap] = useState(true);
 
   const enabledFilters = () => {
     const filters = [];
@@ -152,12 +153,24 @@ export default ({
     callbackFromParent(list);
   };
 
+  const mapRefPass = currentMap => {
+    setMap(currentMap !== null ? currentMap.state.map : currentMap);
+  };
+
+  const moveMapTo = (id, location) => {
+    map.flyTo({ center: location, zoom: 14, speed: 1 });
+  };
+
+  const handleListItemClick = elem => {
+    moveMapTo(null, elem.location);
+  };
+
   return (
     <div style={{ maxHeight: "calc(100vh - 140px)", overflow: "auto" }}>
       <PlanWrapper {...restProps}>
         {!filterOpen ? (
           <>
-            <Map className="map" />
+            <Map className="map" mapRefPass={mapRefPass} />
             <Slider header={"Recommended activities"}>
               {nuuksio.map((trail, key) => (
                 <CardWrapper key={key}>
@@ -171,7 +184,9 @@ export default ({
                           Read more
                         </button>
                         <button
-                        //onClick={() => setState({ card: trail, open: true })}
+                          onClick={() => {
+                            moveMapTo(trail.id, trail.location);
+                          }}
                         >
                           Show on map
                         </button>
@@ -199,11 +214,18 @@ export default ({
               <header>To-do list</header>
               <article>
                 {list.length > 0 &&
-                  list.map((elem, key) => (
-                    <ToDoListItem key={key} element={elem} image={elem.image}>
-                      {elem.trail ? <Hike /> : <POI />}
-                    </ToDoListItem>
-                  ))}
+                  list.map((elem, key) => {
+                    return (
+                      <ToDoListItem
+                        key={key}
+                        element={elem}
+                        image={elem.image}
+                        onClick={() => handleListItemClick(elem)}
+                      >
+                        {elem.trail ? <Hike /> : <POI />}
+                      </ToDoListItem>
+                    );
+                  })}
                 <ToDoListItem>+</ToDoListItem>
               </article>
             </ToDoList>

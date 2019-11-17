@@ -334,6 +334,7 @@ export const ToDoList = styled.div`
 `;
 
 export const ToDoListItem = styled.div`
+  cursor: pointer;
   width: 75px;
   height: 75px;
   margin: 5px;
