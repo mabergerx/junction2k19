@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import ReactMapboxGl from "react-mapbox-gl";
+import ReactMapboxGl, { Marker } from "react-mapbox-gl";
+import nuuksioData from "../../assets/data/nuuksio.json";
 
-const Map = ReactMapboxGl({
+const Mapbox = ReactMapboxGl({
   accessToken: process.env.REACT_APP_MAPBOX_ACCESS_TOKEN
 });
 
@@ -11,13 +12,38 @@ const MapWrapper = styled.div`
   width: 100%;
 `;
 
-export default props => (
-  <MapWrapper {...props}>
-    <Map
-      style="mapbox://styles/xheory/ck31eegwo0mfp1co4kxr8nmd8?fresh=true"
-      containerStyle={{ height: "100%", width: "100%" }}
-      center={[24.508737, 60.312675]}
-      zoom={[11]}
-    ></Map>
-  </MapWrapper>
-);
+const StyledMarker = styled(Marker)`
+  color: red;
+`;
+
+const renderMarker = (id, location, type) => {
+  return (
+    <StyledMarker key={id} coordinates={location}>
+      Icon here
+    </StyledMarker>
+  );
+};
+
+const Map = props => {
+  return (
+    <MapWrapper {...props}>
+      <Mapbox
+        style="mapbox://styles/xheory/ck31eegwo0mfp1co4kxr8nmd8?fresh=true"
+        containerStyle={{ height: "100%", width: "100%" }}
+        center={[24.508737, 60.312675]}
+        zoom={[11]}
+        ref={e => props.mapRefPass(e)}
+      >
+        {nuuksioData.map(renderMarker)}
+      </Mapbox>
+    </MapWrapper>
+  );
+};
+
+Map.defaultProps = {
+  mapRefPass: () => {
+    console.error("MAP REF PASS NOT IMPLEMENTED!");
+  }
+};
+
+export default Map;
