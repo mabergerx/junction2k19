@@ -10,7 +10,7 @@ import nationalParks from "../../assets/data/nationalpark_images.json";
 const Header = styled.div`
   display: flex;
   background-color: white;
-  z-index: 1;
+  z-index: 100;
   min-height: 70px;
   position: fixed;
   width: 100%;

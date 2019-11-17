@@ -196,7 +196,7 @@ export const InfoPage = styled(Card)`
   section {
     top: 10px;
     right: 10px;
-    z-index: 1;
+    z-index: 100;
     position: absolute;
   }
 
