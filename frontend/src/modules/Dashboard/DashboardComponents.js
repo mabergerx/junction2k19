@@ -25,7 +25,7 @@ export const Card = styled.article`
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: ${props => `url(images/${props.image})`};
+      background-image: ${props => `url(${props.image})`};
       display: flex;
       align-items: flex-end;
       padding: 10px;
@@ -341,7 +341,7 @@ export const ToDoListItem = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: ${props => `url(images/${props.image})`};
+  background-image: ${props => `url(${props.image})`};
   display: flex;
   align-items: center;
   justify-content: center;

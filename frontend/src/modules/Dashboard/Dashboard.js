@@ -56,7 +56,13 @@ export default ({ onClick }) => {
             <Slider header={"Trails"}>
               {hikingTrails.map((trail, key) => (
                 <CardWrapper key={key}>
-                  <Card image={trail.image}>
+                  <Card
+                    image={
+                      trail.image
+                        ? `images/${trail.image}`
+                        : trail.flickr_picture_urls[0]
+                    }
+                  >
                     <div className="card__image">
                       <div className="card__content">
                         <h1>{trail.trail_name}</h1>

@@ -161,10 +161,16 @@ export default ({
             <Slider header={"Recommended activities"}>
               {nuuksio.map((trail, key) => (
                 <CardWrapper key={key}>
-                  <SmallCard image={trail.image}>
+                  <SmallCard
+                    image={
+                      trail.image
+                        ? `images/${trail.image}`
+                        : trail.flickr_picture_urls[0]
+                    }
+                  >
                     <div className="card__image">
                       <div className="card__content">
-                        <h1>{trail.trail_name}</h1>
+                        <h1>{trail.trail_name || trail.name}</h1>
                         <button
                           onClick={() => setState({ card: trail, open: true })}
                         >
@@ -177,7 +183,7 @@ export default ({
                         </button>
                       </div>
                       <div className="card__tags">
-                        <Hike width={20} height={20} />
+                        {trail.trail_name && <Hike width={20} height={20} />}
                         {trail.trail_name === "takala" && (
                           <Bike width={20} height={20} />
                         )}
@@ -200,8 +206,16 @@ export default ({
               <article>
                 {list.length > 0 &&
                   list.map((elem, key) => (
-                    <ToDoListItem key={key} element={elem} image={elem.image}>
-                      {elem.trail ? <Hike /> : <POI />}
+                    <ToDoListItem
+                      key={key}
+                      element={elem}
+                      image={
+                        elem.image
+                          ? `images/${elem.image}`
+                          : elem.flickr_picture_urls[0]
+                      }
+                    >
+                      {elem.image ? <Hike /> : <POI />}
                     </ToDoListItem>
                   ))}
                 <ToDoListItem>+</ToDoListItem>
