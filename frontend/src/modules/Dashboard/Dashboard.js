@@ -6,7 +6,6 @@ import {
   NavigationWrapper,
   Item,
   ItemWrapper,
-  AccountWrapper,
   CardWrapper
 } from "./DashboardComponents";
 import Image from "../../assets/sample.jpeg";
@@ -69,9 +68,7 @@ export default ({ onClick }) => {
             }
           />
         ) : (
-          <AccountWrapper>
-            <AccountPage />
-          </AccountWrapper>
+          <AccountPage />
         )}
         {state.open && (
           <InfoPage

@@ -162,10 +162,6 @@ export const ItemWrapper = styled.div`
   flex: 1 0 33%;
 `;
 
-export const AccountWrapper = styled.div`
-  background-color: white;
-`;
-
 export const SliderItem = styled.div`
   background-color: white;
   margin-right: 10px;
