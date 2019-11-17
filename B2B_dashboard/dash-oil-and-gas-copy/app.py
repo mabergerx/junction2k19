@@ -124,7 +124,7 @@ app.layout = html.Div(
                 html.Div(
                     [
                         html.P(
-                            "Choose the time period (2017):",
+                            "Choose the time period (2015):",
                             className="control_label",
                         ),
                         dcc.RangeSlider(
@@ -374,6 +374,7 @@ def make_map_stats(year_slider):
     fig = px.scatter_mapbox(selected, lat="lat", lon="long", color="Visits", hover_name="CounterID_ASTA",
                             animation_frame="month", size="Visits", hover_data=["month"],
                             color_continuous_scale=px.colors.cmocean.phase)
+    fig.update_layout(title_text='Popularity of the check-in points during the year 2015')
 
     return fig
 
