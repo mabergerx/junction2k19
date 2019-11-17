@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Map from "../Map/Map";
 import Slider from "../Slider/Slider";
-import hikingTrails from "../../assets/data/hiking_trails.json";
+import nuuksioTrails from "../../assets/data/nuuksio.json";
 import Hike from "../Icons/Hike";
 import Bike from "../Icons/Bike";
 import POI from "../Icons/POI";
@@ -15,6 +15,10 @@ import {
   ToDoList,
   ToDoListItem
 } from "../Dashboard/DashboardComponents";
+
+const hikingTrails = nuuksioTrails.filter(item =>
+  item.categories.includes("hike")
+);
 
 const PlanWrapper = styled.div`
   .map {
@@ -52,7 +56,7 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
     adventure: false
   });
   const [list, setList] = useState([]);
-
+  console.log("hikingTrails", nuuksioTrails);
   console.log(list);
   return (
     <PlanWrapper {...restProps}>
