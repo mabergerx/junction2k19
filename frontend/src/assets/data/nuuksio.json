@@ -3827,7 +3827,7 @@
     "season_summer": "TRUE",
     "season_autumn": "TRUE",
     "season_winter": "FALSE",
-    "difficulty": "easy",
+    "difficulty": "moderate",
     "location": { "lat": 60.167702, "lon": 30.300815 },
     "route_marking": "green",
     "image": "soidinkierros_trail.jpg",

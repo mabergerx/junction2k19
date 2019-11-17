@@ -62,20 +62,87 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
     meadow: false,
     outdoor_activity: false
   });
+  const [nuuksio, setNuuksio] = useState(nuuksioTrails);
   const [list, setList] = useState([]);
   const [open, setOpen] = useState({
     open: false,
     card: {}
   });
+  const [filterOpen, setFilterOpen] = useState(true);
+
+  const enabledFilters = () => {
+    const filters = [];
+    if (state.hike) {
+      filters.push("hike");
+    }
+    if (state.bike) {
+      filters.push("bike");
+    }
+    if (state.food) {
+      filters.push("food");
+    }
+    if (state.lodging) {
+      filters.push("lodging");
+    }
+    if (state.health_fitness) {
+      filters.push("health_fitness");
+    }
+    if (state.waterside) {
+      filters.push("waterside");
+    }
+    if (state.natural_landmark) {
+      filters.push("natural_landmark");
+    }
+    if (state.animals) {
+      filters.push("animals");
+    }
+    if (state.meadow) {
+      filters.push("meadow");
+    }
+    if (state.outdoor_activity) {
+      filters.push("outdoor_activity");
+    }
+    return filters;
+  };
+
+  const filterByCategories = entry => {
+    const filters = enabledFilters();
+    const result = filters.some(filter => entry.categories.includes(filter));
+    return result;
+  };
+
+  const doRecommmendations = () => {
+    let filteredNuuksio = null;
+
+    if (
+      state.hike ||
+      state.bike ||
+      state.food ||
+      state.lodging ||
+      state.health_fitness ||
+      state.waterside ||
+      state.natural_landmark ||
+      state.animals ||
+      state.meadow ||
+      state.outdoor_activity
+    ) {
+      filteredNuuksio = nuuksio.filter(filterByCategories);
+    } else {
+      filteredNuuksio = nuuksio;
+    }
+
+    setNuuksio(filteredNuuksio);
+    setFilterOpen(false);
+  };
 
   return (
     <div style={{ maxHeight: "calc(100vh - 140px)", overflow: "auto" }}>
       <PlanWrapper {...restProps}>
-        {!hasSuggestions ? (
+        {!filterOpen ? (
           <>
             <Map className="map" />
             <Slider header={"Recommended activities"}>
-              {hikingTrails.map((trail, key) => (
+              {nuuksio.map((trail, key) => (
                 <CardWrapper key={key}>
                   <SmallCard image={trail.image}>
                     <div className="card__image">
@@ -292,7 +359,7 @@ export default ({ onClick, hasSuggestions, ...restProps }) => {
               </>
             )}
             <footer>
-              <button>Submit</button>
+              <button onClick={doRecommmendations}>Submit</button>
             </footer>
           </Container>
         )}
