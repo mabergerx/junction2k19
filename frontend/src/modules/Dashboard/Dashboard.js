@@ -5,6 +5,7 @@ import {
   Navigation,
   NavigationWrapper,
   Item,
+  Tag,
   ItemWrapper,
   CardWrapper
 } from "./DashboardComponents";
@@ -26,6 +27,10 @@ import { Circle } from "./DashboardComponents";
 
 const hikingTrails = nuuksioTrails.filter(item =>
   item.categories.includes("hike")
+);
+
+const pointsofInterest = nuuksioTrails.filter(
+  item => !item.categories.includes("hike")
 );
 
 export default ({ onClick }) => {
@@ -84,6 +89,27 @@ export default ({ onClick }) => {
                       <div className="card__tags">
                         <Hike />
                         {trail.trail_name === "takala" && <Bike />}
+                      </div>
+                    </div>
+                  </Card>
+                </CardWrapper>
+              ))}
+            </Slider>
+            <Slider header={"Points of interest"}>
+              {pointsofInterest.map((trail, key) => (
+                <CardWrapper key={key}>
+                  <Card image={trail.flickr_picture_urls[0]}>
+                    <div className="card__image">
+                      <div className="card__content">
+                        <h1>{trail.name}</h1>
+                        <button
+                          onClick={() => setState({ card: trail, open: true })}
+                        >
+                          Read more
+                        </button>
+                      </div>
+                      <div className="card__tags">
+                        <Tag>{trail.google_types[0]}</Tag>
                       </div>
                     </div>
                   </Card>
