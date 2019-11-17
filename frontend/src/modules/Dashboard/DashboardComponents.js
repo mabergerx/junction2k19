@@ -28,7 +28,7 @@ export const Card = styled.article`
       background-image: ${props => `url(images/${props.image})`};
       display: flex;
       align-items: flex-end;
-      padding: 20px;
+      padding: 10px;
       &:before {
         content: "";
         background: rgba(0, 0, 0, 0.15);
@@ -47,6 +47,23 @@ export const Card = styled.article`
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      button {
+        border: 2px solid white;
+        color: white;
+        background-color: transparent;
+        box-shadow: none;
+        font-family: avenirblack, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        padding: 10px;
+        font-weight: bold;
+        margin: auto;
+        font-size: 12px;
+        white-space: nowrap;
+        text-transform: uppercase;
+      }
     }
     &__tags {
       position: absolute;
@@ -164,8 +181,10 @@ export const InfoPage = styled(Card)`
   top: 70px;
   left: 0px;
   min-height: calc(100vh - 140px);
+  max-height: calc(100vh - 140px);
   z-index: 111111;
   background-color: white;
+  overflow: auto;
 
   .card__content {
     top: 130px;
@@ -173,7 +192,7 @@ export const InfoPage = styled(Card)`
 
   .card__image {
     &:before {
-      height: 260px;
+      height: 240px;
     }
   }
 
@@ -198,6 +217,7 @@ export const InfoPage = styled(Card)`
       text-transform: uppercase;
       font-family: avenirblack, "Helvetica Neue", Helvetica, Arial, sans-serif;
       margin: auto;
+      margin-top: 20px;
     }
 
     span,
@@ -214,4 +234,79 @@ export const InfoPage = styled(Card)`
       }
     }
   }
+`;
+
+export const SmallCard = styled(Card)`
+  .card {
+    &__image {
+      height: 150px;
+    }
+    &__tags {
+      flex-direction: column;
+      display: flex;
+    }
+  }
+`;
+
+export const Container = styled.div`
+  background-color: white;
+  margin: 20px;
+  border-radius: 15px;
+  padding: 20px;
+
+  h1 {
+    font-size: 20px;
+    font-family: avenirblack, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  section {
+    display: flex;
+  }
+
+  ul {
+    display: flex;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+  }
+
+  footer {
+    display: flex;
+    button {
+      background-color: #f77064;
+      border: none;
+      padding: 12px;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: avenirblack, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: auto;
+      margin-top: 20px;
+    }
+  }
+`;
+
+export const Button = styled.button`
+  border: ${props => (props.selected ? "2px solid #f77064" : "none")};
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  background-color: "#999";
+  margin-right: 5px;
+  outline: none;
+`;
+
+export const FlatButton = styled.button`
+  border: ${props => (props.selected ? "2px solid #f77064" : "none")};
+  height: 50px;
+  display: flex;
+  background-color: "#fff";
+  margin-right: 5px;
+  outline: none;
+  color: ${props => (props.selected ? "#f77064" : "white")};
+  border-radius: 10px;
+  font-weight: bold;
 `;

@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import {
   DashboardWrapper,
   Card,
-  Tag,
   Navigation,
   NavigationWrapper,
   Item,
   ItemWrapper,
   AccountWrapper,
-  CardWrapper,
-  InfoPage
+  CardWrapper
 } from "./DashboardComponents";
 import Image from "../../assets/sample.jpeg";
 import Header from "../Header/Header";
@@ -23,6 +21,8 @@ import hikingTrails from "../../assets/data/hiking_trails.json";
 import Slider from "../Slider/Slider";
 import { SliderItem } from "./DashboardComponents";
 import Plan from "../Plan/Plan";
+import InfoPage from "../InfoPage/InfoPage";
+import AccountPage from "../Account/Account";
 
 export default ({ onClick }) => {
   const [selected, setSelected] = useState("Explore");
@@ -39,14 +39,16 @@ export default ({ onClick }) => {
           <>
             <Slider header={"Trails"}>
               {hikingTrails.map((trail, key) => (
-                <CardWrapper
-                  key={key}
-                  onClick={() => setState({ card: trail, open: true })}
-                >
+                <CardWrapper key={key}>
                   <Card image={trail.image}>
                     <div className="card__image">
                       <div className="card__content">
                         <h1>{trail.trail_name}</h1>
+                        <button
+                          onClick={() => setState({ card: trail, open: true })}
+                        >
+                          Read more
+                        </button>
                       </div>
                       <div className="card__tags">
                         <Hike />
@@ -67,43 +69,15 @@ export default ({ onClick }) => {
             }
           />
         ) : (
-          <AccountWrapper>Account</AccountWrapper>
+          <AccountWrapper>
+            <AccountPage />
+          </AccountWrapper>
         )}
         {state.open && (
-          <InfoPage image={state.card.image}>
-            <section onClick={() => setState({ card: {}, open: false })}>
-              <Close color={"#FFF"} />
-            </section>
-            <div className="card__image">
-              <div className="card__content">
-                <h1>{state.card.trail_name}</h1>
-              </div>
-              <div className="card__tags">
-                <Hike />
-                {state.card.trail_name === "takala" && <Bike />}
-              </div>
-            </div>
-            <article>
-              <span>{state.card.description}</span>
-              <div>
-                <p>Length: </p>
-                <span>{state.card.trail_length_km}km</span>
-              </div>
-              <div>
-                <p>Type: </p>
-                <span>{state.card.type}</span>
-              </div>
-              <div>
-                <p>Difficulty: </p>
-                <span>{state.card.difficulty}</span>
-              </div>
-              <div>
-                <p>Route marking: </p>
-                <span>{state.card.route_marking}</span>
-              </div>
-              <button>Add to my plan</button>
-            </article>
-          </InfoPage>
+          <InfoPage
+            card={state.card}
+            onClick={() => setState({ card: {}, open: false })}
+          />
         )}
       </DashboardWrapper>
       <NavigationWrapper>
