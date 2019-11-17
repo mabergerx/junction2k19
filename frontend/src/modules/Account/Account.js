@@ -15,6 +15,10 @@ const ContStyled = styled(Container)`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h1 {
+    text-align: center;
+  }
 `;
 
 const Links = styled.div`
