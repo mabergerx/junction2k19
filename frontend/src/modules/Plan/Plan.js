@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Map from "../Map/Map";
 import Slider from "../Slider/Slider";
-import hikingTrails from "../../assets/data/hiking_trails.json";
+import nuuksioTrails from "../../assets/data/nuuksio.json";
 import Hike from "../Icons/Hike";
 import Bike from "../Icons/Bike";
 import POI from "../Icons/POI";
@@ -16,6 +16,10 @@ import {
   ToDoListItem
 } from "../Dashboard/DashboardComponents";
 import InfoPage from "../InfoPage/InfoPage";
+
+const hikingTrails = nuuksioTrails.filter(item =>
+  item.categories.includes("hike")
+);
 
 const PlanWrapper = styled.div`
   .map {
@@ -64,6 +68,7 @@ export default ({
     meadow: false,
     outdoor_activity: false
   });
+  const [nuuksio, setNuuksio] = useState(nuuksioTrails);
   const [list, setList] = useState(
     prevList && prevList.length > 0 ? prevList : []
   );
@@ -71,6 +76,72 @@ export default ({
     open: false,
     card: {}
   });
+  const [filterOpen, setFilterOpen] = useState(true);
+
+  const enabledFilters = () => {
+    const filters = [];
+    if (state.hike) {
+      filters.push("hike");
+    }
+    if (state.bike) {
+      filters.push("bike");
+    }
+    if (state.food) {
+      filters.push("food");
+    }
+    if (state.lodging) {
+      filters.push("lodging");
+    }
+    if (state.health_fitness) {
+      filters.push("health_fitness");
+    }
+    if (state.waterside) {
+      filters.push("waterside");
+    }
+    if (state.natural_landmark) {
+      filters.push("natural_landmark");
+    }
+    if (state.animals) {
+      filters.push("animals");
+    }
+    if (state.meadow) {
+      filters.push("meadow");
+    }
+    if (state.outdoor_activity) {
+      filters.push("outdoor_activity");
+    }
+    return filters;
+  };
+
+  const filterByCategories = entry => {
+    const filters = enabledFilters();
+    const result = filters.some(filter => entry.categories.includes(filter));
+    return result;
+  };
+
+  const doRecommmendations = () => {
+    let filteredNuuksio = null;
+
+    if (
+      state.hike ||
+      state.bike ||
+      state.food ||
+      state.lodging ||
+      state.health_fitness ||
+      state.waterside ||
+      state.natural_landmark ||
+      state.animals ||
+      state.meadow ||
+      state.outdoor_activity
+    ) {
+      filteredNuuksio = nuuksio.filter(filterByCategories);
+    } else {
+      filteredNuuksio = nuuksio;
+    }
+
+    setNuuksio(filteredNuuksio);
+    setFilterOpen(false);
+  };
 
   useEffect(() => {
     callbackFromParent(list);
@@ -84,11 +155,11 @@ export default ({
   return (
     <div style={{ maxHeight: "calc(100vh - 140px)", overflow: "auto" }}>
       <PlanWrapper {...restProps}>
-        {!hasSuggestions ? (
+        {!filterOpen ? (
           <>
             <Map className="map" />
             <Slider header={"Recommended activities"}>
-              {hikingTrails.map((trail, key) => (
+              {nuuksio.map((trail, key) => (
                 <CardWrapper key={key}>
                   <SmallCard image={trail.image}>
                     <div className="card__image">
@@ -306,7 +377,7 @@ export default ({
               </>
             )}
             <footer>
-              <button>Submit</button>
+              <button onClick={doRecommmendations}>Submit</button>
             </footer>
           </Container>
         )}

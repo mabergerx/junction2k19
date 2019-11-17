@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import ReactMapboxGl, { Marker } from "react-mapbox-gl";
 import nuuksioData from "../../assets/data/nuuksio.json";
 
@@ -13,12 +13,16 @@ const MapWrapper = styled.div`
 `;
 
 const StyledMarker = styled(Marker)`
-  color: red;
+  color: ${props => (props.hike ? "red" : "blue")};
 `;
 
-const renderMarker = (id, location, type) => {
+const renderMarker = (id, location, categories) => {
   return (
-    <StyledMarker key={id} coordinates={location}>
+    <StyledMarker
+      key={id}
+      coordinates={location}
+      hike={categories[0] === "hike"}
+    >
       Icon here
     </StyledMarker>
   );
@@ -34,7 +38,9 @@ const Map = props => {
         zoom={[11]}
         ref={e => props.mapRefPass(e)}
       >
-        {nuuksioData.map(poi => renderMarker(poi.id, poi.location, null))}
+        {nuuksioData.map(poi =>
+          renderMarker(poi.id, poi.location, poi.categories)
+        )}
       </Mapbox>
     </MapWrapper>
   );

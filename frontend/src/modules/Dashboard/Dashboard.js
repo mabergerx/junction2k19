@@ -16,13 +16,17 @@ import Account from "../Icons/Account";
 import Hike from "../Icons/Hike";
 import Bike from "../Icons/Bike";
 import Close from "../Icons/Close";
-import hikingTrails from "../../assets/data/hiking_trails.json";
+import nuuksioTrails from "../../assets/data/nuuksio.json";
 import Slider from "../Slider/Slider";
 import { SliderItem } from "./DashboardComponents";
 import Plan from "../Plan/Plan";
 import InfoPage from "../InfoPage/InfoPage";
 import AccountPage from "../Account/Account";
 import { Circle } from "./DashboardComponents";
+
+const hikingTrails = nuuksioTrails.filter(item =>
+  item.categories.includes("hike")
+);
 
 export default ({ onClick }) => {
   const [selected, setSelected] = useState("Plan");
