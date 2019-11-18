@@ -436,46 +436,6 @@
     "categories": ["lodging", "food"]
   },
   {
-    "id": "ChIJ2b0JcFPujUYREeKzKbTk7OI",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": "Nothing",
-      "reviews": "Nothing",
-      "amount_ratings": "Nothing",
-      "website": "http://www.rakennusliikejunno.fi/"
-    },
-    "google_types": ["point_of_interest", "establishment"],
-    "name": "A. Junno Oy",
-    "location": {
-      "lat": 60.3131828,
-      "lon": 24.5379624
-    },
-    "flickr_tags": [],
-    "flickr_picture_urls": [],
-    "flickr_objects_ml": [],
-    "categories": ["natural_landmark", "lodging", "animals"]
-  },
-  {
-    "id": "ChIJFQAxRh3vjUYR3ATJP4CqusE",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": "Nothing",
-      "reviews": "Nothing",
-      "amount_ratings": "Nothing",
-      "website": "https://www.pennek.fi/"
-    },
-    "google_types": ["point_of_interest", "establishment"],
-    "name": "Pennek Solutions Oy",
-    "location": {
-      "lat": 60.32295389999999,
-      "lon": 24.5085123
-    },
-    "flickr_tags": [],
-    "flickr_picture_urls": [],
-    "flickr_objects_ml": [],
-    "categories": ["meadow", "animals"]
-  },
-  {
     "id": "ChIJz0HGC1PujUYRcTssY8gOuGs",
     "place_details": {
       "opening_times": "Nothing",
@@ -962,37 +922,6 @@
       "totem_pole"
     ],
     "categories": ["natural_landmark"]
-  },
-  {
-    "id": "ChIJ6VOUl6LujUYRIlt_dbZn_oU",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": "Nothing",
-      "rating": 5,
-      "reviews": [
-        {
-          "author_name": "Jan wasström",
-          "author_url": "https://www.google.com/maps/contrib/110925007221121660722/reviews",
-          "profile_photo_url": "https://lh3.ggpht.com/-FCylXggcd4E/AAAAAAAAAAI/AAAAAAAAAAA/5zKt-SaG_no/s128-c0x00000000-cc-rp-mo/photo.jpg",
-          "rating": 5,
-          "relative_time_description": "a year ago",
-          "text": "",
-          "time": 1530120098
-        }
-      ],
-      "amount_ratings": 1,
-      "website": "http://www.lautta-sahko.fi/"
-    },
-    "google_types": ["point_of_interest", "establishment"],
-    "name": "Lautta-Sähkö Ky",
-    "location": {
-      "lat": 60.2941859,
-      "lon": 24.4541395
-    },
-    "flickr_tags": [],
-    "flickr_picture_urls": [],
-    "flickr_objects_ml": [],
-    "categories": ["lodging", "meadow"]
   },
   {
     "id": "ChIJ8Xn130zujUYRkHtQeVFJofQ",
@@ -2330,101 +2259,6 @@
     "categories": ["health_fitness", "food", "lodging", "waterside"]
   },
   {
-    "id": "ChIJ01YXeWPujUYRwBOcd9qZmEk",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": "Nothing",
-      "reviews": "Nothing",
-      "amount_ratings": "Nothing",
-      "website": "Nothing"
-    },
-    "google_types": ["point_of_interest", "establishment"],
-    "name": "TMI Anne Riihonen",
-    "location": {
-      "lat": 60.28758209999999,
-      "lon": 24.5070139
-    },
-    "flickr_tags": [],
-    "flickr_picture_urls": [],
-    "flickr_objects_ml": [],
-    "categories": ["meadow", "waterside", "outdoor_activity"]
-  },
-  {
-    "id": "ChIJIVEXeWPujUYRGpTFU4E7g-c",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": "Nothing",
-      "reviews": "Nothing",
-      "amount_ratings": "Nothing",
-      "website": "Nothing"
-    },
-    "google_types": ["point_of_interest", "establishment"],
-    "name": "JylhäGames Oy",
-    "location": {
-      "lat": 60.28758209999999,
-      "lon": 24.5070139
-    },
-    "flickr_tags": [],
-    "flickr_picture_urls": [],
-    "flickr_objects_ml": [],
-    "categories": ["meadow", "waterside", "outdoor_activity"]
-  },
-  {
-    "id": "ChIJP7e5f5jujUYRpstHimpabOw",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": "Nothing",
-      "rating": 3.7,
-      "reviews": [
-        {
-          "author_name": "Aki Kinnunen",
-          "author_url": "https://www.google.com/maps/contrib/117538336521557225642/reviews",
-          "language": "fi",
-          "profile_photo_url": "https://lh4.ggpht.com/-YDR4J4zhUj0/AAAAAAAAAAI/AAAAAAAAAAA/9n37O4joecY/s128-c0x00000000-cc-rp-mo/photo.jpg",
-          "rating": 1,
-          "relative_time_description": "9 months ago",
-          "text": "Asiakaspalvelu ala-arvoista varsinkin jos yrittää tiedustella takuuta, ei jaksaa keskustella aiheesta ja lyö luurin korvaan.",
-          "time": 1549697591
-        },
-        {
-          "author_name": "aki vilkeniemi",
-          "author_url": "https://www.google.com/maps/contrib/101084727197544990755/reviews",
-          "profile_photo_url": "https://lh6.ggpht.com/-AbQuJ2QHOwc/AAAAAAAAAAI/AAAAAAAAAAA/PBBZKdcuLmE/s128-c0x00000000-cc-rp-mo/photo.jpg",
-          "rating": 5,
-          "relative_time_description": "7 months ago",
-          "text": "",
-          "time": 1555359222
-        },
-        {
-          "author_name": "Roger Grundström",
-          "author_url": "https://www.google.com/maps/contrib/108703074831800886511/reviews",
-          "profile_photo_url": "https://lh5.ggpht.com/-esnH15ieKy0/AAAAAAAAAAI/AAAAAAAAAAA/o101NwRITvQ/s128-c0x00000000-cc-rp-mo/photo.jpg",
-          "rating": 5,
-          "relative_time_description": "a year ago",
-          "text": "",
-          "time": 1517407512
-        }
-      ],
-      "amount_ratings": 3,
-      "website": "http://www.kisarengas.fi/"
-    },
-    "google_types": [
-      "car_repair",
-      "point_of_interest",
-      "store",
-      "establishment"
-    ],
-    "name": "Kisarengas Oy",
-    "location": {
-      "lat": 60.2921485,
-      "lon": 24.4542155
-    },
-    "flickr_tags": [],
-    "flickr_picture_urls": [],
-    "flickr_objects_ml": [],
-    "categories": ["lodging", "food", "meadow"]
-  },
-  {
     "id": "ChIJ5ZT0Dc_ujUYR6Zu18idzeAk",
     "place_details": {
       "opening_times": "Nothing",
@@ -2530,46 +2364,6 @@
       "breakwater"
     ],
     "categories": ["natural_landmark", "lodging", "waterside", "health_fitness"]
-  },
-  {
-    "id": "ChIJAyN3w-rzjUYRbib4IuHU41A",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": "Nothing",
-      "reviews": "Nothing",
-      "amount_ratings": "Nothing",
-      "website": "Nothing"
-    },
-    "google_types": ["point_of_interest", "establishment"],
-    "name": "Brrobustle Oy",
-    "location": {
-      "lat": 60.2850607,
-      "lon": 24.5203491
-    },
-    "flickr_tags": [],
-    "flickr_picture_urls": [],
-    "flickr_objects_ml": [],
-    "categories": ["natural_landmark", "waterside"]
-  },
-  {
-    "id": "ChIJf7lzC2zujUYR5wFAfFNGdXU",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": "Nothing",
-      "reviews": "Nothing",
-      "amount_ratings": "Nothing",
-      "website": "https://kuntojaterveys.sporttisaitti.com/"
-    },
-    "google_types": ["point_of_interest", "establishment"],
-    "name": "Kunto Ja Terveys R.Y.",
-    "location": {
-      "lat": 60.2858495,
-      "lon": 24.5319617
-    },
-    "flickr_tags": [],
-    "flickr_picture_urls": [],
-    "flickr_objects_ml": [],
-    "categories": ["outdoor_activity", "animals", "meadow"]
   },
   {
     "id": "ChIJG35oLTnujUYRj_CXzClKCOI",
@@ -3075,26 +2869,6 @@
     "categories": ["food", "lodging", "waterside", "outdoor_activity"]
   },
   {
-    "id": "ChIJa9_Xg5nujUYRKzgAG712C5k",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": "Nothing",
-      "reviews": "Nothing",
-      "amount_ratings": "Nothing",
-      "website": "https://www.desjukasval.fi/start/"
-    },
-    "google_types": ["point_of_interest", "establishment"],
-    "name": "De Sjukas Väl rf",
-    "location": {
-      "lat": 60.29042740000001,
-      "lon": 24.4638961
-    },
-    "flickr_tags": [],
-    "flickr_picture_urls": [],
-    "flickr_objects_ml": [],
-    "categories": ["meadow", "animals"]
-  },
-  {
     "id": "ChIJwx96rD7ujUYRrmQ5e-AlA90",
     "place_details": {
       "opening_times": {
@@ -3249,26 +3023,6 @@
       "stole"
     ],
     "categories": ["waterside", "lodging", "outdoor_activity"]
-  },
-  {
-    "id": "ChIJPf_hVJjujUYRnBp2tDbIQjY",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": "Nothing",
-      "reviews": "Nothing",
-      "amount_ratings": "Nothing",
-      "website": "https://www.kooditutorit.fi/"
-    },
-    "google_types": ["point_of_interest", "establishment"],
-    "name": "Kooditutorit Konsultointi Oy",
-    "location": {
-      "lat": 60.291321,
-      "lon": 24.4593377
-    },
-    "flickr_tags": [],
-    "flickr_picture_urls": [],
-    "flickr_objects_ml": [],
-    "categories": ["meadow", "animals", "outdoor_activity"]
   },
   {
     "id": "ChIJtyjsgcnujUYRgEZNVBYZpqU",
@@ -3648,32 +3402,6 @@
       "earthstar"
     ],
     "categories": ["outdoor_activity", "health_fitness"]
-  },
-  {
-    "id": "ChIJqf7hu3LujUYR8S9P5YFUH14",
-    "place_details": {
-      "opening_times": "Nothing",
-      "photo_refs": "Nothing",
-      "reviews": "Nothing",
-      "amount_ratings": "Nothing",
-      "website": "https://centreforfinno-ugricandarcticshamanism.fi/action/"
-    },
-    "google_types": ["point_of_interest", "establishment"],
-    "name": "SUOMALAIS-UGRILAISEN SAMANISMIN KESKUS",
-    "location": {
-      "lat": 60.2788174,
-      "lon": 24.5317539
-    },
-    "flickr_tags": [],
-    "flickr_picture_urls": [],
-    "flickr_objects_ml": [],
-    "categories": [
-      "outdoor_activity",
-      "health_fitness",
-      "meadow",
-      "animals",
-      "waterside"
-    ]
   },
   {
     "id": "punarinnankierros",
